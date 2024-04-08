@@ -1,19 +1,13 @@
 import Image from "next/image";
 import Counter from "./components/Counter";
-
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <main>
-homepage
-{/* <Counter /> */}
-
-
-
+      <Hero />
+      {/* <Counter /> */}
     </main>
-
-
-
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     //   <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
