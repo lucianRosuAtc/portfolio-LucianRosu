@@ -21,10 +21,10 @@ export default function NavBar() {
           {link.url === pathname && (
             <motion.span
               initial={{ y: "-100%" }}
-              animate={{ y: 5 }}
+              animate={{ y: 0 }}
               transition={{ type: "tween" }}
-              laypoutId="underline"
-              className="absolute left-0 top-full h-[2px] bg-primary w-full duration-700"
+              layoutId="underline"
+              className="absolute left-0 top-full h-[2px] bg-primary w-full mt-1"
             />
           )}
           {link.name}
