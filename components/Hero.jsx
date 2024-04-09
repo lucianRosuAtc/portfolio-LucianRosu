@@ -43,8 +43,8 @@ export default function Hero() {
             <Socials />
           </div>
 
-          <div className="">
-            <div className=" border-red-500 border">
+          <div className="hidden xl:flex relative">
+            <div className="">
               <DevImg />
             </div>
           </div>
