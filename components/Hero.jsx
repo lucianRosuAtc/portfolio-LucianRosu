@@ -19,17 +19,28 @@ export default function Hero() {
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex flex-col justify-center xl:mx-0 mx-auto text-center xl:text-left max-w-xl">
-            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-wider">Web Developer</div>
+            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-wider">
+              Web Developer
+            </div>
             <h1 className="mb-4">Hello, my name is Lucian Rosu</h1>
             <p className="text-muted-foreground text-lg mb-8 font-light max-w-md mx-auto xl:mx-0">
-            A concise summary offering insights into myself, my professional journey, and my occupational engagements.
+              A concise summary offering insights into myself, my professional
+              journey, and my occupational engagements.
             </p>
             <div className="flex flex-col md:flex-row gap-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
-              <Button className="gap-2 px-9" >Contact Me <Send size={18} /></Button>
+                <Button className="gap-2 px-9">
+                  Contact Me <Send size={18} />
+                </Button>
               </Link>
-              <Button variant='secondary' className="gap-2 border border-primary">Download CV <Download size={18} /></Button>
+              <Button
+                variant="secondary"
+                className="gap-2 border border-primary"
+              >
+                Download CV <Download size={18} />
+              </Button>
             </div>
+            <Socials />
           </div>
 
           {/* <div className="hidden xl:flex relative"><Image/></div> */}
