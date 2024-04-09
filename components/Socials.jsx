@@ -23,11 +23,13 @@ const social = [
 ];
 
 
-export default function Socials() {
+export default function Socials({ containerStyles, linkStyles}) {
   return (
-    <div className="flex gap-x-6 mx-auto xl:mx-0">
+  
+    <div className={`${containerStyles}`}>
       {social.map((item, index) => (
-        <a href={item.url} key={index} target="_blank" className="text-foreground text-2xl hover:text-primary transition-all">
+        <a href={item.url} key={index} target="_blank"
+         className={`${linkStyles}`}>
           {item.name}
         </a>
       ))}

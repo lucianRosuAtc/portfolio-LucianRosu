@@ -1,14 +1,8 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
-import Image from "next/image";
-import {
-  RiBriefcase4Fill,
-  RiTeamFill,
-  RiTodoFill,
-  RiArrowDownSLine,
-} from "react-icons/ri";
-import { BriefcaseBusiness,ClipboardList,Handshake } from "lucide-react";
+import { RiArrowDownSLine } from "react-icons/ri";
+import { BriefcaseBusiness, ClipboardList, Handshake } from "lucide-react";
 import DevImg from "./DevImg";
 import Socials from "./Socials";
 import Badge from "./Badge";
@@ -40,7 +34,10 @@ export default function Hero() {
                 Download CV <Download size={18} />
               </Button>
             </div>
-            <Socials />
+            <Socials
+              containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              linkStyles="text-foreground text-2xl hover:text-primary transition-all"
+            />
           </div>
 
           <div className="hidden xl:flex relative">
