@@ -107,3 +107,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+
+h1 {
+  @apply text-4xl xl:text-7xl xl:leading-normal font-bold;
+}
