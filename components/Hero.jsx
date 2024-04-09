@@ -43,7 +43,11 @@ export default function Hero() {
             <Socials />
           </div>
 
-          {/* <div className="hidden xl:flex relative"><Image/></div> */}
+          <div className="">
+            <div className=" border-red-500 border">
+              <DevImg />
+            </div>
+          </div>
         </div>
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary" />
