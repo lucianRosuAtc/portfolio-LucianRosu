@@ -8,7 +8,7 @@ import {
   RiTodoFill,
   RiArrowDownSLine,
 } from "react-icons/ri";
-
+import { BriefcaseBusiness,ClipboardList,Handshake } from "lucide-react";
 import DevImg from "./DevImg";
 import Socials from "./Socials";
 import Badge from "./Badge";
@@ -44,7 +44,27 @@ export default function Hero() {
           </div>
 
           <div className="hidden xl:flex relative">
-            <Badge />
+            <Badge
+              containerStyles="absolute top-[24%] -left-20"
+              icon={<BriefcaseBusiness />}
+              endCountNum={15}
+              badgeText="Months Of Experience"
+            />
+            <Badge
+              containerStyles="absolute top-[80%] -left-4"
+              icon={<ClipboardList />}
+              endCountNum={20}
+              endCountText={"+"}
+              badgeText="Finished Projects"
+            />
+            <Badge
+              containerStyles="absolute top-[65%] -right-8"
+              icon={<Handshake />}
+              endCountNum={28}
+              endCountText={"+"}
+              badgeText="Happy Clients"
+            />
+
             <div className="">
               <DevImg />
             </div>
