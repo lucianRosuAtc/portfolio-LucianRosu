@@ -44,6 +44,7 @@ export default function Hero() {
           </div>
 
           <div className="hidden xl:flex relative">
+            <Badge />
             <div className="">
               <DevImg />
             </div>
@@ -56,4 +57,3 @@ export default function Hero() {
     </section>
   );
 }
-
