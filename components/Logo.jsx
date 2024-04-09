@@ -9,7 +9,7 @@ export default function Logo() {
         width={240}
         height={60}
         alt="Logo"
-        className="object-cover w-36 md:w-60 h-auto md:h-16 rounded-md border-2 border-[#DBC078] cursor-pointer"
+        className="object-cover w-36 md:w-60 h-auto md:h-16 rounded-md border-2 border-goldText cursor-pointer"
       />
     </Link>
   );

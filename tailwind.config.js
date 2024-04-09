@@ -18,6 +18,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        goldText: "#DBC078",
+        lightDark: "#090908",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
