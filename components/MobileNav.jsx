@@ -24,7 +24,7 @@ export default function MobileNav() {
       </SheetTrigger>
       <SheetContent className="dark:bg-lightDark w-full">
         <div className="flex flex-col items-center justify-between h-full py-8">
-          <div className="flex flex-col items-center justify-between gap-y-10 sm:gap-y-14 md:gap-y-20 lg:gap-y-24">
+          <div className="flex flex-col items-center justify-between gap-y-32">
             <SheetClose asChild>
               <Link href="/">
                 <Image
