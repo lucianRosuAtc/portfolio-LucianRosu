@@ -132,9 +132,9 @@ export default function About() {
 
   console.log(qualificationData);
   return (
-    <section className="xl:h-[860px] pb-12 my-7 xl:my-12">
+    <section className="xl:h-[860px] pb-12 my-3 md:my-7 xl:my-12">
       <div className="flex flex-col px-4 md:px-12 mx-auto">
-        <h2 className="relative flex items-center justify-between gap-x-3 text-4xl font-bold w-max mb-8 xl:mb-16 text-center mx-auto">
+        <h2 className="relative flex items-center justify-between mb-8 xl:mb-16 text-center mx-auto">
           About me
         </h2>
         <div className="flex flex-col xl:flex-row">
@@ -150,7 +150,29 @@ export default function About() {
               </TabsList>
 
               <div className="text-lg mt-12 xl:mt-8">
-                <TabsContent value="personal">My info</TabsContent>
+                <TabsContent value="personal">
+                  <div className="text-center xl:text-left">
+                    <h3 className="mb-4">
+                      Unmatch Service Quality for Over 15 Months.
+                    </h3>
+                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                      My expertise lies in creating innovative websites using
+                      advanced technology, providing a dynamic and captivating
+                      user experience.
+                    </p>
+                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                      {infoData.map((item, index) => (
+                        <div
+                          className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                          key={index}
+                        >
+                          <div className="text-primary">{item.icon}</div>
+                          <div className="">{item.text}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </TabsContent>
                 <TabsContent value="qualifications">qualifications</TabsContent>
                 <TabsContent value="skils">skils</TabsContent>
               </div>

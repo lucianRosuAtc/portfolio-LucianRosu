@@ -62,6 +62,22 @@ h1 {
   @apply text-4xl xl:text-7xl xl:leading-normal font-bold;
 }
 
+h2{
+  @apply text-3xl xl:text-5xl xl:leading-normal font-bold;
+}
+
+h3 {
+  @apply text-2xl xl:text-4xl xl:leading-normal font-bold;
+}
+
+h4 {
+  @apply text-xl xl:text-2xl xl:leading-normal font-semibold;
+}
+
+.subtitle{
+  @apply text-muted-foreground text-lg mb-8 font-light;
+}
+
 .badge {
   @apply flex items-center gap-x-4 z-10 w-[190px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-md;
 }

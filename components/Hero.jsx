@@ -9,7 +9,7 @@ import Badge from "./Badge";
 
 export default function Hero() {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-orange-100 dark:bg-transparent">
+    <section className="py-12 xl:py-24 xl:h-[84vh] xl:pt-28 bg-orange-100 dark:bg-transparent">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex flex-col justify-center xl:mx-0 mx-auto text-center xl:text-left max-w-xl">
@@ -17,7 +17,7 @@ export default function Hero() {
               Web Developer
             </div>
             <h1 className="mb-4">Hello, my name is Lucian Rosu</h1>
-            <p className="text-muted-foreground text-lg mb-8 font-light max-w-md mx-auto xl:mx-0">
+            <p className="subtitle max-w-md mx-auto xl:mx-0">
               A concise summary offering insights into myself, my professional
               journey, and my occupational engagements.
             </p>
@@ -62,7 +62,7 @@ export default function Hero() {
             <DevImg />
           </div>
         </div>
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+        <div className="hidden md:flex absolute left-2/4 bottom-[40vh] xl:bottom-12 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>
