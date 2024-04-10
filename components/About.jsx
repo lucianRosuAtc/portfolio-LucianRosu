@@ -133,7 +133,7 @@ export default function About() {
   console.log(qualificationData);
   return (
     <section className="xl:h-[860px] pb-12 xl:py-12">
-      <div className="container mx-auto mt-6 lg:mt-0 ">
+      <div className="flex flex-col px-4 mx-auto mt-6 lg:mt-0 ">
         <h2 className="relative flex items-center justify-between gap-x-3 text-4xl font-bold w-max mb-8 xl:mb-16 text-center mx-auto">
           About me
         </h2>
@@ -144,12 +144,14 @@ export default function About() {
           <div className="flex-1">
             <Tabs defaultValue="personal">
               <TabsList>
-                <TabsTrigger value="personal">Personal Info</TabsTrigger>
+                <TabsTrigger value="personal">My Info</TabsTrigger>
                 <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
                 <TabsTrigger value="skils">Skils</TabsTrigger>
               </TabsList>
-              <div className="">
-                <TabsContent value="personal">personal info</TabsContent>
+              <div className="text-lg mt-12 xl:mt-8">
+                <TabsContent value="personal">My info</TabsContent>
+                <TabsContent value="qualifications">qualifications</TabsContent>
+                <TabsContent value="skils">skils</TabsContent>
               </div>
             </Tabs>
           </div>
