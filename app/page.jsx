@@ -1,11 +1,12 @@
-import Image from "next/image";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <About />
       {/* <Counter /> */}
     </main>
   );

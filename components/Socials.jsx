@@ -1,4 +1,3 @@
-"use client";
 import { social } from "./myLinks-data";
 
 export default function Socials() {

@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
 
-function Header() {
+export default function Header() {
   const [header, setHeader] = useState(false);
   const pathname = usePathname();
   // console.log(pathname);
@@ -41,5 +41,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
