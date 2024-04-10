@@ -2,18 +2,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
-const links = [
-  { url: "/", name: "Home" },
-  { url: "/projects", name: "My Projects" },
-  { url: "/contact", name: "Contact" },
-];
+import { projectlinks } from "./myLinks-data";
 
-export default function NavBar({ containerStyles}) {
+export default function NavBar() {
   const pathname = usePathname();
   return (
-    <div className={`${containerStyles}`}>
-      {links.map((link) => (
-        <Link  
+    <div className="hidden xl:flex gap-x-8 items-center">
+      {projectlinks.map((link) => (
+        <Link
           className="relative hover:text-primary transition-all"
           key={link.url}
           href={link.url}
