@@ -32,7 +32,7 @@ export default function MobileNav() {
                   width={240}
                   height={60}
                   alt="Logo"
-                  className="object-cover w-36 md:w-60 h-auto md:h-16 rounded-md border-2 border-goldText cursor-pointer"
+                  className="object-cover w-44 md:w-60 h-auto md:h-16 rounded-md border-2 border-goldText cursor-pointer"
                   priority
                 />
               </Link>
@@ -60,13 +60,13 @@ export default function MobileNav() {
             </div>
           </div>
           <SheetClose asChild>
-            <div className="flex gap-x-4">
+            <div className="flex gap-x-8">
               {social.map((item, index) => (
                 <a
                   href={item.url}
                   key={index}
                   target="_blank"
-                  className="text-2xl hover:text-primary"
+                  className="text-4xl hover:text-primary"
                 >
                   {item.name}
                 </a>
