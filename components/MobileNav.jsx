@@ -11,17 +11,16 @@ export default function MobileNav() {
       <SheetTrigger asChild>
         <AlignJustify className="cursor-pointer" />
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="dark:bg-lightDark">
         <div className="flex flex-col items-center justify-between h-full py-8">
-          <div className="flex flex-col items-center gap-y-32">
+          <div className="flex flex-col items-center gap-y-10 sm:gap-y-14 md:gap-y-20 lg:gap-y-24">
             <Logo />
             <NavBar
               containerStyles="flex flex-col items-center gap-y-6"
-              linkStyles="text-2xl"
+              onClose={() => Sheet.onClose()}
             />
           </div>
-            <Socials containerStyles="flex gap-x-4" 
-            linkStyles="text-2xl"/>
+          <Socials containerStyles="flex gap-x-4" linkStyles="text-2xl hover:text-primary" />
         </div>
       </SheetContent>
     </Sheet>

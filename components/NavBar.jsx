@@ -8,13 +8,13 @@ const links = [
   { url: "/contact", name: "Contact" },
 ];
 
-export default function NavBar({ containerStyles, linkStyles, underlineStyles}) {
+export default function NavBar({ containerStyles}) {
   const pathname = usePathname();
   return (
     <div className={`${containerStyles}`}>
       {links.map((link) => (
         <Link  
-          className={`${linkStyles}`}
+          className="relative hover:text-primary transition-all"
           key={link.url}
           href={link.url}
         >
@@ -24,7 +24,7 @@ export default function NavBar({ containerStyles, linkStyles, underlineStyles}) 
               animate={{ y: 0 }}
               transition={{ type: "tween" }}
               layoutId="underline"
-              className={`${underlineStyles}`}
+              className="absolute left-0 top-full h-[2px] bg-primary w-full mt-1"
             />
           )}
           {link.name}
