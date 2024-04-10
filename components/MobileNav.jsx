@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-import { projectlinks } from "./myLinks-data";
+import { navigationlinks } from "./myLinks-data";
 import { social } from "./myLinks-data";
 
 export default function MobileNav() {
@@ -37,14 +37,14 @@ export default function MobileNav() {
                 />
               </Link>
             </SheetClose>
-            <div className="flex flex-col items-center gap-y-6">
-              {projectlinks.map((link) => (
-                <SheetClose asChild key={link.url}>
+            <div className="flex flex-col items-center text-2xl gap-y-6">
+              {navigationlinks.map((navlink) => (
+                <SheetClose asChild key={navlink.url}>
                   <Link
-                    href={link.url}
+                    href={navlink.url}
                     className="relative hover:text-primary transition-all"
                   >
-                    {link.url === pathname && (
+                    {navlink.url === pathname && (
                       <motion.span
                         initial={{ y: "-100%" }}
                         animate={{ y: 0 }}
@@ -53,7 +53,7 @@ export default function MobileNav() {
                         className="absolute left-0 top-full h-[2px] bg-primary w-full mt-1"
                       />
                     )}
-                    {link.name}
+                    {navlink.name}
                   </Link>
                 </SheetClose>
               ))}

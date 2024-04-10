@@ -3,7 +3,7 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaXTwitter } from "react-icons/fa6";
 
 
-export const projectlinks = [
+export const navigationlinks = [
     { url: "/", name: "Home" },
     { url: "/projects", name: "My Projects" },
     { url: "/contact", name: "Contact" },
