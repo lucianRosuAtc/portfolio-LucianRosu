@@ -37,7 +37,7 @@ export default function MobileNav() {
                 />
               </Link>
             </SheetClose>
-            <div className="flex flex-col items-center text-2xl gap-y-6">
+            <div className="flex flex-col items-center text-2xl gap-y-8">
               {navigationlinks.map((navlink) => (
                 <SheetClose asChild key={navlink.url}>
                   <Link

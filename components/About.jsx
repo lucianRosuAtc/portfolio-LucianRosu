@@ -121,12 +121,40 @@ const skillData = [
       {
         imgPath: "/images/VsCode.svg",
       },
-     
     ],
   },
 ];
 
 export default function About() {
-  console.log(qualificationData)
-  return <div>about</div>;
+  const getData = (arr, title) => {
+    return arr.find((item) => item.title === title);
+  };
+
+  console.log(qualificationData);
+  return (
+    <section className="xl:h-[860px] pb-12 xl:py-12">
+      <div className="container mx-auto mt-6 lg:mt-0 ">
+        <h2 className="relative flex items-center justify-between gap-x-3 text-4xl font-bold w-max mb-8 xl:mb-16 text-center mx-auto">
+          About me
+        </h2>
+        <div className="flex flex-col xl:flex-row">
+          <div className="hidden relative xl:flex flex-1">
+            <DevImg />
+          </div>
+          <div className="flex-1">
+            <Tabs defaultValue="personal">
+              <TabsList>
+                <TabsTrigger value="personal">Personal Info</TabsTrigger>
+                <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
+                <TabsTrigger value="skils">Skils</TabsTrigger>
+              </TabsList>
+              <div className="">
+                <TabsContent value="personal">personal info</TabsContent>
+              </div>
+            </Tabs>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
