@@ -143,7 +143,7 @@ export default function About() {
           </div>
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="bg-transparent grid md:grid-cols-3 max-w-[520px] md:border dark:border-none mx-auto">
+              <TabsList className="bg-transparent grid md:grid-cols-3 max-w-xl  md:border dark:border-none mx-auto xl:mx-0">
                 <TabsTrigger value="personal">My Info</TabsTrigger>
                 <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
                 <TabsTrigger value="skils">Skils</TabsTrigger>
@@ -171,9 +171,47 @@ export default function About() {
                         </div>
                       ))}
                     </div>
+                    <div className="flex flex-col gap-y-2">
+                      <p className="text-primary">Language Skills</p>
+                      <div className="border-b border"></div>
+                      <p className="">
+                        English, Spanish, French, Romanian, Italian
+                      </p>
+                    </div>
                   </div>
                 </TabsContent>
-                <TabsContent value="qualifications">qualifications</TabsContent>
+
+                <TabsContent value="qualifications">
+                  <h3 className="mb-8 text-center xl:text-left">
+                    My Awesome Journey
+                  </h3>
+                  <div className="">
+                    <div className="">
+                      <div className="flex gap-x-4 items-center text-xl text-primary">
+                        <Briefcase />
+                        <h4 className="capitalize font-medium">
+                          {getData(qualificationData, "experience").title}
+                        </h4>
+                      </div>
+
+                      <div className="">
+                        {getData(qualificationData, "experience").data.map(
+                          (item, index) => {
+                            const { company, qualification, years } = item;
+                            return (
+                              <div className="" key={index}>
+                                <div className="">
+                                  <div className="">{company}</div>
+                                </div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                    <div className="">edu</div>
+                  </div>
+                </TabsContent>
                 <TabsContent value="skils">skils</TabsContent>
               </div>
             </Tabs>
