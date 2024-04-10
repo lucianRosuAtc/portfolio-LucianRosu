@@ -32,7 +32,7 @@ export default function MobileNav() {
                   width={240}
                   height={60}
                   alt="Logo"
-                  className="object-cover w-44 md:w-60 h-auto md:h-16 rounded-md border-2 border-goldText cursor-pointer"
+                  className="object-cover w-60 h-16 rounded-md border-2 border-goldText cursor-pointer"
                   priority
                 />
               </Link>

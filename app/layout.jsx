@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider attribute='class' defaultTheme='light'>
+        <ThemeProvider>
           <Header />
           {children}
           <Footer />
@@ -24,3 +24,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+{/* <ThemeProvider attribute='class' defaultTheme='light'> */}
