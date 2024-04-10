@@ -20,7 +20,7 @@ export default function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger>
-        <AlignJustify className="cursor-pointer" />
+        <AlignJustify className="cursor-pointer"/>
       </SheetTrigger>
       <SheetContent className="dark:bg-lightDark w-full">
         <div className="flex flex-col items-center justify-between h-full py-8">
