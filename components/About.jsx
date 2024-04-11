@@ -1,5 +1,4 @@
 import DevImg from "./DevImg";
-import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 import {
@@ -134,11 +133,11 @@ export default function About() {
   return (
     <section className="xl:h-[860px] pb-12 my-3 md:my-7 xl:my-12">
       <div className="flex flex-col px-4 md:px-12 mx-auto">
-        <h2 className="relative flex items-center justify-between mb-8 xl:mb-16 text-center mx-auto">
+        <h2 className="relative flex items-center justify-between mb-8 xl:mb-16 mx-auto">
           About me
         </h2>
         <div className="flex flex-col xl:flex-row">
-          <div className="hidden relative xl:flex flex-1">
+          <div className="hidden relative xl:flex flex-1 justify-center">
             <DevImg />
           </div>
           <div className="flex-1">
@@ -181,15 +180,12 @@ export default function About() {
                   </div>
                 </TabsContent>
 
-                {/* MARK: experience & education Tab */}
-
                 <TabsContent value="qualifications">
                   <h3 className="mb-8 text-center xl:text-left">
                     My Awesome Journey
                   </h3>
                   {/* MARK: experience & education  */}
                   <div className="grid md:grid-cols-2 gap-y-8">
-
                     {/* MARK: experience  */}
                     <div className="flex flex-col gap-y-6">
                       <div className="flex gap-x-4 items-center text-xl text-primary">

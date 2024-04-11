@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={outfit.className}>
+      <body className={`${outfit.className} max-w-[1920px] mx-auto`}>
         <ThemeProvider attribute='class'>
           <Header />
           {children}
