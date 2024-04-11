@@ -1,6 +1,12 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Services from "@/components/Services";
+
+import { GanttChartSquare, Blocks, Gem } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "../ui/Card";
 
 
 const servicesData = [
@@ -53,3 +59,4 @@ export default function Services() {
     </div>
   );
 }
+
