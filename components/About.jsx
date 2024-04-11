@@ -1,8 +1,7 @@
-"use client";
 import DevImg from "./DevImg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { infoData, qualificationData, skillData } from "./about-data";
+import { infoData, qualificationData, skillData, experienceData } from "./about-data";
 import { GraduationCap, Briefcase } from "lucide-react";
 
 export default function About() {
@@ -68,36 +67,29 @@ export default function About() {
                     <div className="flex flex-col gap-y-6">
                       <div className="flex gap-x-4 items-center text-xl text-primary">
                         <Briefcase />
-                        <h4 className="capitalize font-medium">
-                          {getData(qualificationData, "experience").title}
-                        </h4>
+                        <h4 className="capitalize font-medium">Experience</h4>
                       </div>
 
                       <div className="flex flex-col gap-y-8">
-                        {getData(qualificationData, "experience").data.map(
-                          (item, index) => {
-                            const { company, role, years } = item;
-                            return (
-                              <div className="flex gap-x-8 group" key={index}>
-                                <div className="h-[84px] w-[1px] bg-border relative ml-2">
-                                  <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
-                                </div>
+                        {qualificationData.map((index) => (
+                          <div className="flex gap-x-8 group" key={index}>
+                            <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                              <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
+                            </div>
 
-                                <div>
-                                  <div className="font-semibold text-xl leading-none mb-2">
-                                    {company}
-                                  </div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">
-                                    {role}
-                                  </div>
-                                  <div className="text-base font-medium">
-                                    {years}
-                                  </div>
-                                </div>
+                            <div>
+                              <div className="font-semibold text-xl leading-none mb-2">
+                                {index.company}
                               </div>
-                            );
-                          }
-                        )}
+                              <div className="text-lg leading-none text-muted-foreground mb-4">
+                                {index.role}
+                              </div>
+                              <div className="text-base font-medium">
+                                {index.years}
+                              </div>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
 
@@ -105,36 +97,29 @@ export default function About() {
                     <div className="flex flex-col gap-y-6">
                       <div className="flex gap-x-4 items-center text-xl text-primary">
                         <GraduationCap size={28} />
-                        <h4 className="capitalize font-medium">
-                          {getData(qualificationData, "education").title}
-                        </h4>
+                        <h4 className="capitalize font-medium">Education</h4>
                       </div>
 
                       <div className="flex flex-col gap-y-8">
-                        {getData(qualificationData, "education").data.map(
-                          (item, index) => {
-                            const { university, qualification, years } = item;
-                            return (
-                              <div className="flex gap-x-8 group" key={index}>
-                                <div className="h-[84px] w-[1px] bg-border relative ml-2">
-                                  <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
-                                </div>
+                        {experienceData.map((index) => (
+                          <div className="flex gap-x-8 group" key={index}>
+                            <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                              <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
+                            </div>
 
-                                <div>
-                                  <div className="font-semibold text-xl leading-none mb-2">
-                                    {university}
-                                  </div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">
-                                    {qualification}
-                                  </div>
-                                  <div className="text-base font-medium">
-                                    {years}
-                                  </div>
-                                </div>
+                            <div>
+                              <div className="font-semibold text-xl leading-none mb-2">
+                                {index.university}
                               </div>
-                            );
-                          }
-                        )}
+                              <div className="text-lg leading-none text-muted-foreground mb-4">
+                                {index.qualification}
+                              </div>
+                              <div className="text-base font-medium">
+                                {index.years}
+                              </div>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -149,19 +134,14 @@ export default function About() {
                       <div className="border border-b mb-4"></div>
 
                       <div>
-                        {getData(skillData, "skills").data.map(
-                          (item, index) => {
-                            const { name } = item;
-                            return (
-                              <div
-                                className="w-1/2 text-center xl:text-left mx-auto xl:mx-0"
-                                key={index}
-                              >
-                                <div className="font-medium">{name}</div>
-                              </div>
-                            );
-                          }
-                        )}
+                        {skillData.map((skill) => (
+                          <div
+                            className="w-1/2 text-center xl:text-left mx-auto xl:mx-0"
+                            key={skill}
+                          >
+                            <div className="font-medium">{skill.name}</div>
+                          </div>
+                        ))}
                       </div>
                     </div>
 
