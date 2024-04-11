@@ -5,7 +5,7 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { BriefcaseBusiness, ClipboardList, Handshake } from "lucide-react";
 import DevImg from "./DevImg";
 import Socials from "./Socials";
-import Badge from "../ui/Badge";
+import Badge from "@/components/ui/Badge";
 
 export default function Hero() {
   return (
