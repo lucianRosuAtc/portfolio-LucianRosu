@@ -50,7 +50,7 @@ export const qualificationData = [
         years: "2010-2014",
       },
       {
-        university: "University of Scrimba",
+        university: "University of Scrimba ",
         qualification: "Diploma in Web Development",
         years: "2018-2019",
       },
