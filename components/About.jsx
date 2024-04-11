@@ -27,7 +27,7 @@ export default function About() {
                 <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
                 <TabsTrigger value="skils">Skils</TabsTrigger>
               </TabsList>
-              {/*  MARK: My Info */}
+              {/*  My Info */}
               <div className="text-lg mt-12 xl:mt-8">
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
@@ -64,9 +64,9 @@ export default function About() {
                   <h3 className="mb-8 text-center xl:text-left">
                     My Awesome Journey
                   </h3>
-                  {/* MARK: experience & education  */}
+                  {/*  experience & education  */}
                   <div className="grid md:grid-cols-2 gap-y-8">
-                    {/* MARK: experience  */}
+                    {/*  experience  */}
                     <div className="flex flex-col gap-y-6">
                       <div className="flex gap-x-4 items-center text-xl text-primary">
                         <Briefcase />
@@ -103,7 +103,7 @@ export default function About() {
                       </div>
                     </div>
 
-                    {/* MARK: education  */}
+                    {/* education  */}
                     <div className="flex flex-col gap-y-6">
                       <div className="flex gap-x-4 items-center text-xl text-primary">
                         <GraduationCap size={28} />
@@ -142,7 +142,7 @@ export default function About() {
                   </div>
                 </TabsContent>
 
-                {/* MARK: skils */}
+                {/* skils */}
                 <TabsContent value="skils">
                   <div className="text-center xl:text-left">
                     <h3 className="mb-8">The Skills and Tools I Use Daily</h3>
