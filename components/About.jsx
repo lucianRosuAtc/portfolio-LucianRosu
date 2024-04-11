@@ -1,136 +1,14 @@
 import DevImg from "./DevImg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-
-import {
-  User2,
-  MailIcon,
-  HomeIcon,
-  PhoneCall,
-  GraduationCap,
-  Calendar,
-  Briefcase,
-} from "lucide-react";
-
-const infoData = [
-  {
-    icon: <User2 size={20} />,
-    text: "Lucian Rosu",
-  },
-  {
-    icon: <PhoneCall size={20} />,
-    text: "07505709297",
-  },
-  {
-    icon: <MailIcon size={20} />,
-    text: "lucian.rosu.atc@gmail.com",
-  },
-  {
-    icon: <Calendar size={20} />,
-    text: "Born on 17/06/1983",
-  },
-  {
-    icon: <GraduationCap size={20} />,
-    text: "University of Leads",
-  },
-  {
-    icon: <HomeIcon size={20} />,
-    text: "Exeter, UK",
-  },
-];
-
-const qualificationData = [
-  {
-    title: "education",
-    data: [
-      {
-        university: "University of Leads",
-        qualification: "BSc in Computer Science",
-        years: "2010-2014",
-      },
-      {
-        university: "University of Scrimba",
-        qualification: "Diploma in Web Development",
-        years: "2018-2019",
-      },
-      {
-        university: "University of Intequal",
-        qualification: "Diploma in Software Development",
-        years: "2023-2024",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    data: [
-      {
-        company: "Adopstar",
-        role: "Web Developer",
-        years: "2023-2024",
-      },
-      {
-        company: "Scrimba",
-        role: "Diploma in Web Development",
-        years: "2018-2019",
-      },
-      {
-        company: "Frelancer",
-        role: "Diploma in Software Development",
-        years: "2023-2024",
-      },
-    ],
-  },
-];
-
-const skillData = [
-  {
-    title: "skills",
-    data: [
-      {
-        name: "HTML",
-      },
-      {
-        name: "CSS",
-      },
-      {
-        name: "Tailwindcss",
-      },
-      {
-        name: "JavaScript",
-      },
-      {
-        name: "React",
-      },
-      {
-        name: "Nextjs",
-      },
-    ],
-  },
-  {
-    title: "tools",
-    data: [
-      {
-        imgPath: "/img/about/VsCode.webp",
-      },
-      {
-        imgPath: "/img/about/VsCode.webp",
-      },
-      {
-        imgPath: "/img/about/VsCode.webp",
-      },
-      {
-        imgPath: "/img/about/VsCode.webp",
-      },
-    ],
-  },
-];
+import { infoData, qualificationData, skillData } from "./about-data";
+import { GraduationCap, Briefcase } from "lucide-react";
 
 export default function About() {
   const getData = (arr, title) => {
     return arr.find((item) => item.title === title);
   };
 
-  // console.log(qualificationData);
   return (
     <section className="xl:h-[860px] pb-12 my-3 md:my-7 xl:my-12">
       <div className="flex flex-col px-4 md:px-12 mx-auto">
@@ -175,7 +53,7 @@ export default function About() {
                       <p className="text-primary">Language Skills</p>
                       <div className="border-b border"></div>
                       <p className="">
-                        English, Spanish, French, Romanian, Italian
+                        English, Spanish, Romanian
                       </p>
                     </div>
                   </div>
@@ -206,7 +84,7 @@ export default function About() {
                                   <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
                                 </div>
 
-                                <div className="">
+                                <div>
                                   <div className="font-semibold text-xl leading-none mb-2">
                                     {company}
                                   </div>
@@ -243,7 +121,7 @@ export default function About() {
                                   <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
                                 </div>
 
-                                <div className="">
+                                <div>
                                   <div className="font-semibold text-xl leading-none mb-2">
                                     {university}
                                   </div>
@@ -266,13 +144,12 @@ export default function About() {
                 {/* MARK: skils */}
                 <TabsContent value="skils">
                   <div className="text-center xl:text-left">
-                  <h3 className="mb-8">The Skills and Tools I Use Daily</h3>
-
+                    <h3 className="mb-8">The Skills and Tools I Use Daily</h3>
                     <div className="mb-16">
                       <h4 className="mb-2">Skils</h4>
                       <div className="border border-b mb-4"></div>
 
-                      <div className="">
+                      <div>
                         {getData(skillData, "skills").data.map(
                           (item, index) => {
                             const { name } = item;
@@ -289,7 +166,7 @@ export default function About() {
                       </div>
                     </div>
 
-                    <div className="">
+                    <div>
                       <h4 className="mb-2">Tools</h4>
                       <div className="border border-b mb-4"></div>
                       <div className="flex gap-x-8 justify-center xl:justify-start">
