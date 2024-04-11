@@ -1,7 +1,3 @@
-import DevImg from "./DevImg";
-import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-
 import {
   User2,
   MailIcon,
