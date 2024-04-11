@@ -2,12 +2,12 @@ import Link from "next/link"
 import { Button } from "/components/ui/Button"
 
 
-import 'swiper/css'
-import 'swiper/css/pagination'
+// import 'swiper/css'
+// import 'swiper/css/pagination'
 
-import {Pagination} from 'swiper/modules'
+// import {Pagination} from 'swiper/modules'
 
-import ProjectCard from '/components/ProjectCard'
+// import ProjectCard from '/components/ProjectCard'
 
 const projectData =[
   {
