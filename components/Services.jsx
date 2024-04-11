@@ -1,13 +1,16 @@
-'use client'
-import { GanttChartSquare, Blocks, Gem } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/Card";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Services from "@/components/Services";
 
+export default function Home() {
+  return (
+    <main>
+      <Hero />
+      <About />
+      <Services />
+    </main>
+  );
+}
 const servicesData = [
   {
     title: "Web Development",
