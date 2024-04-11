@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "./ui/Card";
+} from "./Card"; 
 
 const servicesData = [
   {
