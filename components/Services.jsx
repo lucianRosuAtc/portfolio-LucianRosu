@@ -1,11 +1,8 @@
-import { GanttChartSquare, Blocks, Gem } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "./ui/card"
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Services from "@/components/Services";
+
+
 const servicesData = [
   {
     title: "Web Development",

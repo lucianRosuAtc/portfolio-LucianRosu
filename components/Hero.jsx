@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { Download, Send } from "lucide-react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { BriefcaseBusiness, ClipboardList, Handshake } from "lucide-react";

@@ -1,10 +1,10 @@
-import { Outfit } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const outfit = Outfit({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "portfolio Lucian Rosu",
@@ -24,8 +24,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} max-w-[1920px] mx-auto`}>
-        <ThemeProvider attribute='class'>
+      <body className={`${inter.className} max-w-[1920px] mx-auto`}>
+        <ThemeProvider attribute='class'  defaultTheme="system">
           <Header />
           {children}
           <Footer />
@@ -34,5 +34,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-{/* <ThemeProvider attribute='class' defaultTheme='light'> */}
