@@ -1,7 +1,13 @@
 import DevImg from "./DevImg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { infoData, qualificationData, skillData, experienceData } from "./about-data";
+import {
+  infoData,
+  qualificationData,
+  skillData,
+  experienceData,
+  toolsData
+} from "./about-data";
 import { GraduationCap, Briefcase } from "lucide-react";
 
 export default function About() {
@@ -39,13 +45,13 @@ export default function About() {
                       user experience.
                     </p>
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
-                      {infoData.map((item, index) => (
+                      {infoData.map((info, index) => (
                         <div
                           className="flex items-center gap-x-4 mx-auto xl:mx-0"
                           key={index}
                         >
-                          <div className="text-primary">{item.icon}</div>
-                          <div className="">{item.text}</div>
+                          <div className="text-primary">{info.icon}</div>
+                          <div className="">{info.text}</div>
                         </div>
                       ))}
                     </div>
@@ -71,7 +77,7 @@ export default function About() {
                       </div>
 
                       <div className="flex flex-col gap-y-8">
-                        {qualificationData.map((index) => (
+                        {experienceData.map((experience, index) => (
                           <div className="flex gap-x-8 group" key={index}>
                             <div className="h-[84px] w-[1px] bg-border relative ml-2">
                               <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
@@ -79,13 +85,13 @@ export default function About() {
 
                             <div>
                               <div className="font-semibold text-xl leading-none mb-2">
-                                {index.company}
+                                {experience.company}
                               </div>
                               <div className="text-lg leading-none text-muted-foreground mb-4">
-                                {index.role}
+                                {experience.role}
                               </div>
                               <div className="text-base font-medium">
-                                {index.years}
+                                {experience.years}
                               </div>
                             </div>
                           </div>
@@ -101,7 +107,7 @@ export default function About() {
                       </div>
 
                       <div className="flex flex-col gap-y-8">
-                        {experienceData.map((index) => (
+                        {qualificationData.map((qualification, index) => (
                           <div className="flex gap-x-8 group" key={index}>
                             <div className="h-[84px] w-[1px] bg-border relative ml-2">
                               <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
@@ -109,13 +115,13 @@ export default function About() {
 
                             <div>
                               <div className="font-semibold text-xl leading-none mb-2">
-                                {index.university}
+                                {qualification.university}
                               </div>
                               <div className="text-lg leading-none text-muted-foreground mb-4">
-                                {index.qualification}
+                                {qualification.qualification}
                               </div>
                               <div className="text-base font-medium">
-                                {index.years}
+                                {qualification.years}
                               </div>
                             </div>
                           </div>
@@ -134,10 +140,10 @@ export default function About() {
                       <div className="border border-b mb-4"></div>
 
                       <div>
-                        {skillData.map((skill) => (
+                        {skillData.map((skill, index) => (
                           <div
                             className="w-1/2 text-center xl:text-left mx-auto xl:mx-0"
-                            key={skill}
+                            key={index}
                           >
                             <div className="font-medium">{skill.name}</div>
                           </div>
@@ -149,20 +155,17 @@ export default function About() {
                       <h4 className="mb-2">Tools</h4>
                       <div className="border border-b mb-4"></div>
                       <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {getData(skillData, "tools").data.map((item, index) => {
-                          const { imgPath } = item;
-                          return (
-                            <div key={index}>
-                              <Image
-                                src={imgPath}
-                                width={48}
-                                height={48}
-                                alt="The tools I use everyday"
-                                priority
-                              />
-                            </div>
-                          );
-                        })}
+                        {toolsData.map((tool, index) => (
+                          <div key={index}>
+                            <Image
+                              src={tool.imgPath}
+                              width={48}
+                              height={48}
+                              alt="The tools I use everyday"
+                              priority
+                            />
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
