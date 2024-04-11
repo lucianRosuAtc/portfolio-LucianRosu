@@ -148,7 +148,7 @@ export default function About() {
                 <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
                 <TabsTrigger value="skils">Skils</TabsTrigger>
               </TabsList>
-
+              {/*  MARK: My Info */}
               <div className="text-lg mt-12 xl:mt-8">
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
@@ -181,12 +181,17 @@ export default function About() {
                   </div>
                 </TabsContent>
 
+                {/* MARK: experience & education Tab */}
+
                 <TabsContent value="qualifications">
                   <h3 className="mb-8 text-center xl:text-left">
                     My Awesome Journey
                   </h3>
-                  <div className="">
-                    <div className="">
+                  {/* MARK: experience & education  */}
+                  <div className="grid md:grid-cols-2 gap-y-8">
+
+                    {/* MARK: experience  */}
+                    <div className="flex flex-col gap-y-6">
                       <div className="flex gap-x-4 items-center text-xl text-primary">
                         <Briefcase />
                         <h4 className="capitalize font-medium">
@@ -199,13 +204,21 @@ export default function About() {
                           (item, index) => {
                             const { company, role, years } = item;
                             return (
-                              <div className="flex gap-x-8 group bg-orange-100" key={index}>
-                                <div className="h-[84px] w-[1px] bg-border relative ml-2"></div>  
-                                {/* /// //// */}
+                              <div className="flex gap-x-8 group" key={index}>
+                                <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                  <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
+                                </div>
+
                                 <div className="">
-                                  <div className="font-semibold text-xl leading-none mb-2">{company}</div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">{role}</div>
-                                  <div className="text-base font-medium">{years}</div>
+                                  <div className="font-semibold text-xl leading-none mb-2">
+                                    {company}
+                                  </div>
+                                  <div className="text-lg leading-none text-muted-foreground mb-4">
+                                    {role}
+                                  </div>
+                                  <div className="text-base font-medium">
+                                    {years}
+                                  </div>
                                 </div>
                               </div>
                             );
@@ -213,7 +226,43 @@ export default function About() {
                         )}
                       </div>
                     </div>
-                    <div className="">edu</div>
+
+                    {/* MARK: education  */}
+                    <div className="flex flex-col gap-y-6">
+                      <div className="flex gap-x-4 items-center text-xl text-primary">
+                        <GraduationCap size={28} />
+                        <h4 className="capitalize font-medium">
+                          {getData(qualificationData, "education").title}
+                        </h4>
+                      </div>
+
+                      <div className="flex flex-col gap-y-8">
+                        {getData(qualificationData, "education").data.map(
+                          (item, index) => {
+                            const { university, qualification, years } = item;
+                            return (
+                              <div className="flex gap-x-8 group" key={index}>
+                                <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                  <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] trasition-all duration-700"></div>
+                                </div>
+
+                                <div className="">
+                                  <div className="font-semibold text-xl leading-none mb-2">
+                                    {university}
+                                  </div>
+                                  <div className="text-lg leading-none text-muted-foreground mb-4">
+                                    {qualification}
+                                  </div>
+                                  <div className="text-base font-medium">
+                                    {years}
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </TabsContent>
                 <TabsContent value="skils">skils</TabsContent>
