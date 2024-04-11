@@ -35,9 +35,7 @@ import {
   ];
   
   export const qualificationData = [
-    {
-      title: "education",
-      data: [
+  
         {
           university: "University of Leads",
           qualification: "BSc in Computer Science",
@@ -53,11 +51,13 @@ import {
           qualification: "Diploma in Software Development",
           years: "2023-2024",
         },
-      ],
-    },
-    {
-      title: "experience",
-      data: [
+      ]
+
+
+
+  export const experienceData = [
+  
+     
         {
           company: "Adopstar",
           role: "Web Developer",
@@ -73,8 +73,8 @@ import {
           role: "Diploma in Software Development",
           years: "2023-2024",
         },
-      ],
-    },
+    
+    
   ];
   
   export const skillData = [
