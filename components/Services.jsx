@@ -34,7 +34,7 @@ export default function Services() {
       {/* <div className="container mx-auto"> */}
         <h2 className="mb-20 xl:mb-24 text-center mx-auto">My Services</h2>
 
-        <div className="grid xl:grid-cols-3 justify-center gap-y-14 xl:gap-y-24 xl:gap-x-8">
+        <div className="grid xl:grid-cols-3 justify-center gap-y-[70px] xl:gap-y-24 xl:gap-x-8">
           {servicesData.map((item, index) => {
             return (
               <Card
