@@ -83,7 +83,7 @@ const qualificationData = [
 
 const skillData = [
   {
-    title: "skils",
+    title: "skills",
     data: [
       {
         name: "HTML",
@@ -261,10 +261,32 @@ export default function About() {
                     </div>
                   </div>
                 </TabsContent>
-                <TabsContent value="skils">skils</TabsContent>
+
+                {/* MARK: skils */}
+                <TabsContent value="skils">
+                  <div className="text-center xl:text-left">
+                    <h3 className="mb-8">Tools I Use Everyday</h3>
+
+                    <div className="">
+                      <h4 className="text-xl font-semibold mb-2">Skils</h4>
+                      <div className="border border-b mb-4"></div>
+                    </div>
+
+                    <div className="">
+                      {getData(skillData, "skills").data.map((item, index) => {
+                        const { name } = item;
+                        return (
+                          <div className="w-1/2 text-center xl:text-left mx-auto xl:mx-0" key={index}>
+                            <div className="font-medium">{name}</div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </TabsContent>
               </div>
             </Tabs>
-          </div>
+          </div>          
         </div>
       </div>
     </section>

@@ -6,10 +6,11 @@ export default function DevImg() {
         <div className="relative w-[500px] h-[500px] rounded-full overflow-hidden border-4 border-primary">
           <Image
             src="/img/LucianRosuPortfolioNoBg.png"
-            layout="fill"
-            objectFit="cover"
+            width={500}
+            height={500}
             alt="Lucian Rosu"
             priority
+            className="object-cover w-full h-full"
           />
         </div>
       </div>
