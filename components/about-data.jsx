@@ -99,6 +99,18 @@ export const skillData = [
         {
           name: "Nextjs",
         },
+        {
+          name: "TipeScript",
+        },
+        {
+          name: "Vercel",
+        },
+        {
+          name: "Zepelin",
+        },
+        {
+          name: "Figma",
+        },
       ],
     },
     {
