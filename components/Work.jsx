@@ -1,13 +1,5 @@
 import Link from "next/link"
-// import { Button } from "./ui/button";
 
-
-// import 'swiper/css'
-// import 'swiper/css/pagination'
-
-// import {Pagination} from 'swiper/modules'
-
-// import ProjectCard from '/components/ProjectCard'
 
 const projectData =[
   {
