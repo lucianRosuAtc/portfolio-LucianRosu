@@ -1,4 +1,5 @@
 import DevImg from "./DevImg";
+import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 import {
@@ -109,16 +110,16 @@ const skillData = [
     title: "tools",
     data: [
       {
-        imgPath: "/images/figma.png",
+        imgPath: "/img/about/VsCode.webp",
       },
       {
-        imgPath: "/imag/about/VsCode.webp",
+        imgPath: "/img/about/VsCode.webp",
       },
       {
-        imgPath: "/images/figma.svg",
+        imgPath: "/img/about/VsCode.webp",
       },
       {
-        imgPath: "/images/VsCode.svg",
+        imgPath: "/img/about/VsCode.webp",
       },
     ],
   },
@@ -142,7 +143,7 @@ export default function About() {
           </div>
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="bg-transparent grid md:grid-cols-3 max-w-xl  md:border dark:border-none mx-auto xl:mx-0">
+              <TabsList className="bg-transparent grid md:grid-cols-3 max-w-xl gap-y-2 md:border dark:border-none mx-auto xl:mx-0">
                 <TabsTrigger value="personal">My Info</TabsTrigger>
                 <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
                 <TabsTrigger value="skils">Skils</TabsTrigger>
@@ -265,28 +266,54 @@ export default function About() {
                 {/* MARK: skils */}
                 <TabsContent value="skils">
                   <div className="text-center xl:text-left">
-                    <h3 className="mb-8">Tools I Use Everyday</h3>
+                  <h3 className="mb-8">The Skills and Tools I Use Daily</h3>
 
-                    <div className="">
-                      <h4 className="text-xl font-semibold mb-2">Skils</h4>
+                    <div className="mb-16">
+                      <h4 className="mb-2">Skils</h4>
                       <div className="border border-b mb-4"></div>
+
+                      <div className="">
+                        {getData(skillData, "skills").data.map(
+                          (item, index) => {
+                            const { name } = item;
+                            return (
+                              <div
+                                className="w-1/2 text-center xl:text-left mx-auto xl:mx-0"
+                                key={index}
+                              >
+                                <div className="font-medium">{name}</div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
                     </div>
 
                     <div className="">
-                      {getData(skillData, "skills").data.map((item, index) => {
-                        const { name } = item;
-                        return (
-                          <div className="w-1/2 text-center xl:text-left mx-auto xl:mx-0" key={index}>
-                            <div className="font-medium">{name}</div>
-                          </div>
-                        );
-                      })}
+                      <h4 className="mb-2">Tools</h4>
+                      <div className="border border-b mb-4"></div>
+                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                        {getData(skillData, "tools").data.map((item, index) => {
+                          const { imgPath } = item;
+                          return (
+                            <div key={index}>
+                              <Image
+                                src={imgPath}
+                                width={48}
+                                height={48}
+                                alt="The tools I use everyday"
+                                priority
+                              />
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
                   </div>
                 </TabsContent>
               </div>
             </Tabs>
-          </div>          
+          </div>
         </div>
       </div>
     </section>
