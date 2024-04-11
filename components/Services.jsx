@@ -1,4 +1,4 @@
-
+'use client'
 import { GanttChartSquare, Blocks, Gem } from "lucide-react";
 import {
   Card,
@@ -7,6 +7,7 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/Card";
+
 const servicesData = [
   {
     title: "Web Development",
