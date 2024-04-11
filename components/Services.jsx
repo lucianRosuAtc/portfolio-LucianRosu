@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "/components/ui/Card"
+} from "./ui/card"
 const servicesData = [
   {
     title: "Web Development",
