@@ -7,6 +7,9 @@ import {
     Calendar,
   } from "lucide-react";
   
+
+
+
   export const infoData = [
     {
       icon: <User2 size={20} />,
@@ -33,9 +36,10 @@ import {
       text: "Exeter, UK",
     },
   ];
+
+
   
   export const qualificationData = [
-  
         {
           university: "University of Leads",
           qualification: "BSc in Computer Science",
@@ -56,8 +60,6 @@ import {
 
 
   export const experienceData = [
-  
-     
         {
           company: "Adopstar",
           role: "Web Developer",
@@ -73,14 +75,12 @@ import {
           role: "Diploma in Software Development",
           years: "2023-2024",
         },
-    
-    
   ];
   
+
+
+
   export const skillData = [
-    {
-      title: "skills",
-      data: [
         {
           name: "HTML",
         },
@@ -111,11 +111,11 @@ import {
         {
           name: "Figma",
         },
-      ],
-    },
-    {
-      title: "tools",
-      data: [
+      ]
+    
+
+
+      export const toolsData = [     
         {
           imgPath: "/img/about/VsCode.webp",
         },
@@ -128,6 +128,6 @@ import {
         {
           imgPath: "/img/about/VsCode.webp",
         },
-      ],
-    },
-  ];
+      ]
+    
+  
