@@ -1,11 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { Button } from "./ui/button";
 import { Card, CardDescription } from "./ui/card";
-import { RiGithubFill } from "react-icons/ri";
-import { Link2Icon } from "lucide-react";
-import { Badge } from "./ui/badge";
 import Image from "next/image";
 import { recommendationsData } from "./components-data/recommendations-data";
 
@@ -25,7 +20,6 @@ export default function RecommendationsCarousel() {
     centerMode: true,
     centerPadding: "0",
     autoplay: true,
-    arrows: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -83,15 +77,6 @@ export default function RecommendationsCarousel() {
                   <p className="px-4 pb-5 text-sm">{recommendation.job}</p>
                     </div>
                     </div>
-
-                  <div className="flex justify-center">       
-                    <Link
-                      href={recommendation.link}
-                      className="absolute top-1/2 transform -translate-y-1/2 flex justify-center items-center bg-secondary w-[54px] h-[54px] rounded-full scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-white hover:text-primary hover:border-2 hover:border-primary"
-                    >
-                      <Link2Icon />
-                    </Link>
-                  </div>
                   <CardDescription className="text-muted-foreground text-lg mb-2 font-light line-clamp-6 px-5 pb-16">
                     {recommendation.description}
                   </CardDescription>

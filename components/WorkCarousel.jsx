@@ -15,7 +15,7 @@ import Slider from "react-slick";
 
 export default function WorkCarousel() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 3500,
     autoplaySpeed: 3000,
@@ -23,9 +23,9 @@ export default function WorkCarousel() {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    arrows: true,
     centerPadding: "0",
     autoplay: true,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
