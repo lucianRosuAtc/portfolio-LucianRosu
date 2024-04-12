@@ -15,7 +15,7 @@ import Slider from "react-slick";
 
 export default function WorkCarousel() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 3500,
     autoplaySpeed: 3000,
@@ -23,6 +23,7 @@ export default function WorkCarousel() {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
+    arrows: true,
     centerPadding: "0",
     autoplay: true,
     responsive: [
@@ -53,9 +54,9 @@ export default function WorkCarousel() {
   };
 
   return (
-    <div className="relative mb-12 xl:mb-48 max-w-7xl mx-auto">
+    <div className="relative mb-4 max-w-7xl mx-auto">
       <div className="flex flex-col mx-auto">
-        <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-sm text-center mx-auto xl:mx-0 xl:text-left xl:h-80">
+        <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-sm text-center mx-auto xl:mx-0 xl:text-left xl:h-60">
           <h2 className="mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
             Here are some of my most recent projects. I'm always looking for new
