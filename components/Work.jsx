@@ -35,7 +35,7 @@ const projectData = [
     category: "JavaScript",
     name: "Music Player",
     description:
-      "A simple music player constructed with HTML, CSS and Javascript",
+      "A simple music player constructed with HTML, CSS and Javascript.",
     link: "https://music-player-13.netlify.app/",
     gitHub: "/",
   },
@@ -44,7 +44,7 @@ const projectData = [
     category: "JavaScript",
     name: "Password Generator",
     description:
-      "A Password Generator able to generate paswords between 10 and 16 caracteres constructed with HTML, CSS and Javascript",
+      "A Password Generator able to generate paswords between 10 and 16 caracteres constructed with HTML, CSS and Javascript.",
     link: "https://password-generator13.netlify.app/",
     gitHub: "/",
   },
@@ -90,7 +90,7 @@ export default function Work() {
   };
 
   return (
-    <div className="relative mb-12 xl:mb-48 max-w-7xl mx-auto border">
+    <div className="relative mb-12 xl:mb-48 max-w-7xl mx-auto">
       <div className="flex flex-col mx-auto">
         <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-sm text-center mx-auto xl:mx-0 xl:text-left xl:h-80">
           <h2 className="mb-4">Latest Projects</h2>
@@ -104,11 +104,11 @@ export default function Work() {
         </div>
 
         <div className="">
-          <Slider {...settings} className="mx-auto max-w-7xl h-[500px] px-8 md:px-0">
+          <Slider {...settings} className="mx-auto max-w-7xl px-4 md:px-0">
             {projectData.map((project, index) => (
-              <div key={index}>
-                <Card className="mx-auto  max-w-[400px]">
-                  <Badge className="absolute top-6 ml-4 md:ml-8 mb-2 uppercase text-sm font-medium shadow-xl">
+              <div key={index} className="mx-auto">
+                <Card className="mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12">
+                  <Badge className="absolute top-6 ml-4 md:ml-8 mb-2 uppercase text-sm font-medium shadow-lg dark:shadow-lg dark:shadow-secondary">
                     {project.category}
                   </Badge>
                   <Image
@@ -116,11 +116,11 @@ export default function Work() {
                     alt="project"
                     width={300}
                     height={300}
-                    className="border shadow-xl w-[290px]  h-80 mx-auto object-cover object-center rounded-lg mt-4"
+                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-[290px] h-80 mx-auto object-cover object-center rounded-lg px-1 mt-4"
                     priority="true"
                   />
-                  <h4 className="p-4">{project.name}</h4>
-                  <CardDescription className="text-muted-foreground text-lg mb-2 font-light line-clamp-2 px-5 pb-4">
+                  <h4 className="px-4 py-5">{project.name}</h4>
+                  <CardDescription className="text-muted-foreground text-lg mb-2 font-light line-clamp-2 px-5 pb-16">
                     {project.description}
                   </CardDescription>
                 </Card>
