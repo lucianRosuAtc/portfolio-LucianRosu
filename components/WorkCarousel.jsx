@@ -7,60 +7,23 @@ import { RiGithubFill } from "react-icons/ri";
 import { Link2Icon } from "lucide-react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
+import { projectData } from "./components-data/work-data";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const projectData = [
-  {
-    img: "/img/work/Fun with Sanity.webp",
-    category: "full-stack",
-    name: "Fun with Sanity",
-    description:
-      "A straightforward blog website constructed with Nextjs and Sanity.io.",
-    link: "https://sanity-nextjs-lucian.vercel.app/",
-    gitHub: "/",
-  },
-  {
-    img: "/img/work/TMDB App.webp",
-    category: "Nextjs",
-    name: "The Movie Data Base",
-    description:
-      "Invoking The Movie Database API to maintain an application that stays updated with the latest films.",
-    link: "https://tmdb-api-eta.vercel.app/",
-    gitHub: "/",
-  },
-  {
-    img: "/img/work/Media Player.webp",
-    category: "JavaScript",
-    name: "Music Player",
-    description:
-      "A simple music player constructed with HTML, CSS and Javascript.",
-    link: "https://music-player-13.netlify.app/",
-    gitHub: "/",
-  },
-  {
-    img: "/img/work/Password Generator.png",
-    category: "JavaScript",
-    name: "Password Generator",
-    description:
-      "A Password Generator able to generate paswords between 10 and 16 caracteres constructed with HTML, CSS and Javascript.",
-    link: "https://password-generator13.netlify.app/",
-    gitHub: "/",
-  },
-];
-
-export default function Work() {
+export default function WorkCarousel() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 2500,
+    speed: 3500,
     autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
+    arrows: true,
     centerPadding: "0",
     autoplay: true,
     responsive: [
@@ -91,13 +54,13 @@ export default function Work() {
   };
 
   return (
-    <div className="relative mb-12 xl:mb-48 max-w-7xl mx-auto">
+    <div className="relative mb-4 max-w-7xl mx-auto">
       <div className="flex flex-col mx-auto">
-        <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-sm text-center mx-auto xl:mx-0 xl:text-left xl:h-80">
+        <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-sm text-center mx-auto xl:mx-0 xl:text-left xl:h-60">
           <h2 className="mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, saepe?
+            Here are some of my most recent projects. I'm always looking for new
+            challenges and opportunities to learn new technologies.
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>
@@ -126,7 +89,7 @@ export default function Work() {
                       href={project.gitHub}
                       className="absolute top-1/3 transform -translate-y-1/2 flex justify-center items-center bg-secondary w-[54px] h-[54px] rounded-full scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-white hover:text-primary hover:border-2 hover:border-primary"
                     >
-                      <RiGithubFill size={34}/>
+                      <RiGithubFill size={34} />
                     </Link>
                     <Link
                       href={project.link}
