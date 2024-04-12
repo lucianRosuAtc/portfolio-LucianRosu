@@ -12,8 +12,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-import { navigationlinks } from "./myLinks-data";
-import { social } from "./myLinks-data";
+import { navigationlinks } from "./components-data/myLinks-data";
+import { social } from "./components-data/myLinks-data";
 
 export default function MobileNav() {
   const pathname = usePathname();

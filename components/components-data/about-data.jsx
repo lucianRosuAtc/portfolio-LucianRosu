@@ -9,7 +9,7 @@ import {
   
 
 
-
+  // MARK: INFO DATA
   export const infoData = [
     {
       icon: <User2 size={20} />,
@@ -38,7 +38,7 @@ import {
   ];
 
 
-  
+  // MARK: QUALIFICATION DATA
   export const qualificationData = [
         {
           university: "University of Leads",
@@ -58,7 +58,7 @@ import {
       ]
 
 
-
+      // MARK: EXPERIENCE DATA
   export const experienceData = [
         {
           company: "Adopstar",
@@ -79,7 +79,7 @@ import {
   
 
 
-
+  // MARK: SKILLS DATA
   export const skillData = [
         {
           name: "HTML",
@@ -114,7 +114,7 @@ import {
       ]
     
 
-
+      // MARK: TOOLS DATA
       export const toolsData = [     
         {
           imgPath: "/img/about/VsCode.webp",

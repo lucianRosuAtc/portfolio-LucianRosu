@@ -1,4 +1,4 @@
-import { social } from "./myLinks-data";
+import { social } from "./components-data/myLinks-data";
 
 export default function Socials() {
   return (

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
-import { navigationlinks } from "./myLinks-data";
+import { navigationlinks } from "./components-data/myLinks-data";
 
 export default function NavBar() {
   const pathname = usePathname();
