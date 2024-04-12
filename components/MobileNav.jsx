@@ -28,7 +28,7 @@ export default function MobileNav() {
             <SheetClose asChild>
               <Link href="/">
                 <Image
-                  src="/img/DevLuc.png"
+                  src="/img/logo&header/DevLuc.png"
                   width={240}
                   height={60}
                   alt="Logo"
