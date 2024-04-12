@@ -1,3 +1,7 @@
+
+
+
+
 "use client";
 
 import Link from "next/link";
@@ -7,17 +11,17 @@ import { RiGithubFill } from "react-icons/ri";
 import { Link2Icon } from "lucide-react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
-import { projectData } from "./components-data/work-data";
+import { recommendationsData } from "./components-data/recommendations-data";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-export default function Work() {
+export default function RecommendationsCarousel() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2500,
+    speed: 3500,
     autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -56,19 +60,15 @@ export default function Work() {
     <div className="relative mb-12 xl:mb-48 max-w-7xl mx-auto">
       <div className="flex flex-col mx-auto">
         <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-sm text-center mx-auto xl:mx-0 xl:text-left xl:h-80">
-          <h2 className="mb-4">Latest Projects</h2>
+          <h2 className="mb-4">Recommendations</h2>
           <p className="subtitle mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, saepe?
+         Here are some recomandations from the people I've work with.
           </p>
-          <Link href="/projects">
-            <Button>All Projects</Button>
-          </Link>
-        </div>
+             </div>
 
         <div className="">
           <Slider {...settings} className="mx-auto max-w-7xl px-4 md:px-0">
-            {projectData.map((project, index) => (
+            {recommendationsData.map((project, index) => (
               <div key={index} className="mx-auto">
                 <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12">
                   <Badge className="absolute top-6 ml-4 md:ml-8 mb-2 uppercase text-sm font-medium shadow-lg dark:shadow-lg dark:shadow-secondary">

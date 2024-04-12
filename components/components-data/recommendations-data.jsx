@@ -1,5 +1,5 @@
 
-export const projectData = [
+export const recommendationsData = [
     {
       img: "/img/work/Fun with Sanity.webp",
       category: "full-stack",
@@ -7,7 +7,7 @@ export const projectData = [
       description:
         "A straightforward blog website constructed with Nextjs and Sanity.io.",
       link: "https://sanity-nextjs-lucian.vercel.app/",
-      gitHub: "https://github.com/lucianRosuAtc/sanity-nextjs",
+      gitHub: "/",
     },
     {
       img: "/img/work/TMDB App.webp",
@@ -16,7 +16,7 @@ export const projectData = [
       description:
         "Invoking The Movie Database API to maintain an application that stays updated with the latest films.",
       link: "https://tmdb-api-eta.vercel.app/",
-      gitHub: "https://github.com/lucianRosuAtc/tmdb-api",
+      gitHub: "/",
     },
     {
       img: "/img/work/Media Player.webp",
@@ -25,7 +25,7 @@ export const projectData = [
       description:
         "A simple music player constructed with HTML, CSS and Javascript.",
       link: "https://music-player-13.netlify.app/",
-      gitHub: "https://github.com/lucianRosuAtc/musicPlayer",
+      gitHub: "/",
     },
     {
       img: "/img/work/Password Generator.png",
@@ -34,6 +34,6 @@ export const projectData = [
       description:
         "A Password Generator able to generate paswords between 10 and 16 caracteres constructed with HTML, CSS and Javascript.",
       link: "https://password-generator13.netlify.app/",
-      gitHub: "https://github.com/lucianRosuAtc/Password-Generator",
+      gitHub: "/",
     },
   ];
