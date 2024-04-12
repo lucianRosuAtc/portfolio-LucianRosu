@@ -1,20 +1,17 @@
 import DevImg from "./DevImg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { GraduationCap, Briefcase } from "lucide-react";
 import {
   infoData,
   qualificationData,
   skillData,
   experienceData,
-  toolsData
+  toolsData,
 } from "./components-data/about-data";
-import { GraduationCap, Briefcase } from "lucide-react";
+
 
 export default function About() {
-  const getData = (arr, title) => {
-    return arr.find((item) => item.title === title);
-  };
-
   return (
     <section className="xl:h-[860px] pb-12 my-3 md:my-7 xl:my-12">
       <div className="flex flex-col px-4 md:px-12 mx-auto">
