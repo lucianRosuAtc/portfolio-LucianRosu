@@ -2,8 +2,8 @@
 
 export default function Projects() {
   return (
-    <div>
+    <section className="min-h-screen pt-12">
       projects
-    </div>
+    </section>
   )
 }
