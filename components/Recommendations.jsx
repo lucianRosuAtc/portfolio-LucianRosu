@@ -62,21 +62,20 @@ export default function RecommendationsCarousel() {
             {recommendationsData.map((recommendation, index) => (
               <div key={index} className="mx-auto">
                 <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12">
-                    <div className="flex items-center">
-                  <Image
-                    src={recommendation.img}
-                    alt="recommendation"
-                    width={65}
-                    height={65}
-                    className="shadow-lg dark:shadow-lg dark:shadow-secondary  object-cover object-center rounded-full m-4 "
-                    priority="true"
+                  <div className="flex items-center">
+                    <Image
+                      src={recommendation.img}
+                      alt="recommendation"
+                      width={70}
+                      height={70}
+                      className="shadow-lg border p-1 dark:shadow-lg dark:shadow-secondary object-cover object-center rounded-full m-4"
+                      priority="true"
                     />
                     <div className="flex flex-col">
-
-                  <h4 className="px-4 pt-5">{recommendation.name}</h4>
-                  <p className="px-4 pb-5 text-sm">{recommendation.job}</p>
+                      <h4 className="px-4 pt-5">{recommendation.name}</h4>
+                      <p className="px-4 pb-5 text-sm">{recommendation.job}</p>
                     </div>
-                    </div>
+                  </div>
                   <CardDescription className="text-muted-foreground text-lg mb-2 font-light line-clamp-6 px-5 pb-16">
                     {recommendation.description}
                   </CardDescription>
