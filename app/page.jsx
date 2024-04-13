@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Work from "@/components/WorkCarousel";
-import Recommendations from "@/components/Recommendations";
+import RecommendationsCarousel from "@/components/RecommendationsCarousel";
 import Cta from "@/components/Cta";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <Services />
       <Work />
-      <Recommendations /> 
+      <RecommendationsCarousel /> 
       <Cta />
     </main>
   );
