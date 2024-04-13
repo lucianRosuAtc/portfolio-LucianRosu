@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-
+// MARK: This is a replacer for react-ountUp lib 
 function Counter() {
   const [count, setCount] = useState(0);
 
