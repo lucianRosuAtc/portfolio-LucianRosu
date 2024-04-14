@@ -48,7 +48,7 @@ export default function Projects() {
             {filteredProjects.map((project, index) => (
               <div key={index}>
 
-                <Card className="group relative mx-auto shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg px-8 mb-12">
+                <Card className="group relative mx-auto px-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] md:max-w-[450px] mb-12">
                   <Badge className="absolute top-6 ml-4 md:ml-8 mb-2 uppercase text-sm font-medium shadow-lg dark:shadow-lg dark:shadow-secondary">
                     {project.category}
                   </Badge>
