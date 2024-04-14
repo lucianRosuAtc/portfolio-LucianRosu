@@ -100,7 +100,7 @@ import {
           name: "Nextjs",
         },
         {
-          name: "TipeScript",
+          name: "TypeScript",
         },
         {
           name: "Vercel",

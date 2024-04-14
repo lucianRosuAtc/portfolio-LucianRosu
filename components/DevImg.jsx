@@ -10,7 +10,7 @@ export default function DevImg() {
             width={500}
             alt="Lucian Rosu"
             priority
-            className="object-cover w-auto h-auto"
+            className="object-cover w-full h-full"
           />
         </div>
       </div>
