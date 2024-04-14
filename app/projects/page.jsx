@@ -44,13 +44,16 @@ export default function Projects() {
               );
             })}
           </TabsList>
-          <div className="">
+          <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto gap-4">
             {filteredProjects.map((project, index) => (
-              <div key={index} className="mx-auto">
-                <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12">
+              <div key={index}>
+
+                <Card className="group grid relative justify-center items-center shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg mb-12 mx-auto">
+                {/* <Card className="group relative mx-auto shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px]  mb-12"> */}
                   <Badge className="absolute top-6 ml-4 md:ml-8 mb-2 uppercase text-sm font-medium shadow-lg dark:shadow-lg dark:shadow-secondary">
                     {project.category}
                   </Badge>
+
                   <Image
                     src={project.img}
                     alt="project"
@@ -74,6 +77,7 @@ export default function Projects() {
                       <Link2Icon />
                     </Link>
                   </div>
+
                   <h4 className="px-4 py-5">{project.name}</h4>
                   <CardDescription className="text-muted-foreground text-lg mb-2 font-light line-clamp-2 px-5 pb-16">
                     {project.description}
