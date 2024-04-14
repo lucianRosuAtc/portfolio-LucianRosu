@@ -136,7 +136,7 @@ export default function About() {
                       <h4 className="mb-2">Skils</h4>
                       <div className="border border-b mb-4"></div>
 
-                      <div>
+                      <div className="grid grid-cols-2 gap-y-3 xl:gap-y-6">
                         {skillData.map((skill, index) => (
                           <div
                             className="w-1/2 text-center xl:text-left mx-auto xl:mx-0"
