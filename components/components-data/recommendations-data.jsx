@@ -11,7 +11,7 @@ export const recommendationsData = [
     name: "Gilson de Almeida",
     job:"Full Stack Developer",
     description:
-      "Lucian collaborated with ona project. During this period, he proved that he is an ambitious, hardworking person with good technical skills who has a strong desire to learn even more and improve himself. He works very well in the team and is always willing to help. Lucian is a person I highly recommend.",
+      "Lucian collaborated with us on a project. During this period, he proved that he is an ambitious, hardworking person with good technical skills who has a strong desire to learn even more and improve himself. He works very well in the team and is always willing to help. Lucian is a person I highly recommend.",
   },
   {
     img: "/img/recommendations/Amber.jpg",

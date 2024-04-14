@@ -14,7 +14,7 @@ const year = date.getFullYear();
 export default function Footer() {
   const pathname = usePathname();
   return (
-    <div className="bg-secondary/90 dark:bg-secondary pt-8 md:py-12 border-2 border-t-primary shadow-xl">
+    <div className="bg-secondary/90 dark:bg-secondary pt-8 md:py-12 border-t border-primary shadow-xl">
       <div className="container mx-auto">
         <div className=" flex flex-col md:flex-row justify-between items-center gap-y-8">
           <Logo />
