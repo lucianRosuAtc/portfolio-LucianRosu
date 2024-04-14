@@ -29,7 +29,7 @@ export default function Projects() {
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
         <h2 className="mb-8 xl:mb-16 text-center mx-auto">My Projects</h2>
-        <Tabs defaultValue={category}>
+        <Tabs defaultValue={category} className="mb-12 xl:mb-24">
           <TabsList className=" grid md:grid-cols-4 w-full max-w-[640px] h-full mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => {
               return (
@@ -44,11 +44,11 @@ export default function Projects() {
               );
             })}
           </TabsList>
-          <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto gap-4">
+          <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto md:gap-4">
             {filteredProjects.map((project, index) => (
               <div key={index}>
 
-                <Card className="group relative mx-auto px-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] md:max-w-[450px] mb-12">
+                <Card className="group relative mx-auto shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] md:max-w-[450px] mb-12">
                   <Badge className="absolute top-6 ml-4 md:ml-8 mb-2 uppercase text-sm font-medium shadow-lg dark:shadow-lg dark:shadow-secondary">
                     {project.category}
                   </Badge>
@@ -58,7 +58,7 @@ export default function Projects() {
                     alt="project"
                     width={300}
                     height={300}
-                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-[290px] h-80 mx-auto object-cover object-center rounded-lg px-1 mt-4"
+                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-auto h-80 mx-auto object-cover object-center rounded-lg px-1 mt-4"
                     priority="true"
                   />
 
