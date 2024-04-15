@@ -142,7 +142,11 @@ export default function About() {
                             className="w-1/2 text-center xl:text-left mx-auto xl:mx-0"
                             key={index}
                           >
+                            <div className="flex items-center gap-x-3">
+
+                            <div className="font-medium text-primary">{skill.icon}</div>
                             <div className="font-medium">{skill.name}</div>
+                            </div>
                           </div>
                         ))}
                       </div>
