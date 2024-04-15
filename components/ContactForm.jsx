@@ -1,4 +1,3 @@
-
 "use client";
 
 import emailjs from "@emailjs/browser";
@@ -33,8 +32,8 @@ export default function ContactForm() {
     }
 
     const templateParams = {
-      from_name: formState.email,
-      to_name: "Lucian",
+      subject: formState.email,
+      name: formState.name,
       message: formState.message,
     };
 
@@ -72,7 +71,7 @@ export default function ContactForm() {
     <>
       <form
         onSubmit={sendEmail}
-        className="flex flex-col mt-10 xl:mt-16 gap-y-4"
+        className="container flex flex-col mt-10 xl:mt-16 gap-y-4"
       >
         <div className="relative flex items-center">
           <Input
@@ -114,6 +113,7 @@ export default function ContactForm() {
             }
             placeholder="Your Message"
             required
+            rows="10"
           />
           <MessageCircleMore
             size={20}
@@ -133,5 +133,3 @@ export default function ContactForm() {
     </>
   );
 }
-
-
