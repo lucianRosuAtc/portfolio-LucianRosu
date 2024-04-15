@@ -24,13 +24,13 @@ export default function Projects() {
     category === "All Projects" ? item : item.category === category
   );
 
-  console.log(filteredProjects);
+  // console.log(filteredProjects);
   return (
     <section className="min-h-screen pt-12">
-      <div className="container mx-auto">
+      <div className="px-8 mx-auto">
         <h2 className="mb-8 xl:mb-16 text-center mx-auto">My Projects</h2>
         <Tabs defaultValue={category} className="mb-12 xl:mb-24">
-          <TabsList className=" grid md:grid-cols-4 w-full max-w-[640px] h-full mb-12 mx-auto md:border dark:border-none">
+          <TabsList className="grid md:grid-cols-4 w-full max-w-[640px] h-full mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => {
               return (
                 <TabsTrigger
@@ -44,7 +44,7 @@ export default function Projects() {
               );
             })}
           </TabsList>
-          <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto md:gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max-w-6xl mx-auto md:gap-5">
             {filteredProjects.map((project, index) => (
               <div key={index}>
 
