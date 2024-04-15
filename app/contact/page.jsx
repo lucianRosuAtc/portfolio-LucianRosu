@@ -3,9 +3,8 @@ import { HomeIcon, MailIcon, PhoneCall } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section className="">
       <div className="container mx-auto">
-        <div className="grid  pt-12  mb-6 xl:mb-14">
+        <div className="grid pt-12 mb-6 xl:mb-14">
           <div className="flex flex-col justify-center">
             <div className="flex items-center gap-x-4 text-primary text-lg mb-4">
               Say Hello
@@ -19,8 +18,8 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="grid mb-14 xl:mb-28 ">
-          <div className="flex flex-col gap-y-4 xl:gap-y-8 xl:text-lg">
+        <div className="grid mb-14 xl:mb-24">
+          <div className="flex flex-col gap-y-4 xl:gap-y-6 xl:text-lg">
             <div className="flex items-center gap-x-8 ">
               <MailIcon size={18} className="text-primary" />
               <a
@@ -41,9 +40,9 @@ export default function Contact() {
               </a>
             </div>
           </div>
+
           <ContactForm />
         </div>
       </div>
-    </section>
   );
 }
