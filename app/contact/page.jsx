@@ -10,7 +10,7 @@ export default function Contact() {
             <div className="flex items-center gap-x-4 text-primary text-lg mb-4">
               Say Hello
             </div>
-            <h1 className="">Let's work together</h1>
+            <h1 className="my-4">Let's work together</h1>
             <p className="max-w-[600px] xl:max-w-[900px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
               corrupti vero expedita dignissimos natus reprehenderit. Rerum
