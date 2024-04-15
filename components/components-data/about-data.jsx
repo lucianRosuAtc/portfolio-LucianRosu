@@ -90,6 +90,7 @@ import {
   import { IoLogoVercel } from "react-icons/io5";
   import { GiZeppelin } from "react-icons/gi";
   import { CgFigma } from "react-icons/cg";
+  import { CgFramer } from "react-icons/cg";
 
   export const skillData = [
         {
@@ -124,32 +125,33 @@ import {
           name: "Vercel",
           icon: <IoLogoVercel size={20} />,
         },
-        {
-          name: "Zepelin",
-          icon: <GiZeppelin size={20} />,
-        },
-        {
-          name: "Figma",
-          icon: <CgFigma size={20} />,
-        },
+  
       ]
     
 
       // MARK: TOOLS DATA
-      
+      import { TbBrandVscode } from "react-icons/tb";
+      import { SiPnpm } from "react-icons/si";
+      import { FaGithub } from "react-icons/fa";
+      import { SiShadcnui } from "react-icons/si";
+
       export const toolsData = [     
         {
-          imgPath: "/img/about/VsCode.webp",
+          icon: <TbBrandVscode size={50} />
         },
         {
-          imgPath: "/img/about/VsCode.webp",
+          icon: <SiPnpm size={40} />
         },
         {
-          imgPath: "/img/about/VsCode.webp",
+          icon: <GiZeppelin size={50} />
         },
         {
-          imgPath: "/img/about/VsCode.webp",
+          icon: <CgFigma size={50} />
         },
+        {
+          icon: <FaGithub size={50} />
+        },
+   
       ]
     
   

@@ -10,7 +10,6 @@ import {
   toolsData,
 } from "./components-data/about-data";
 
-
 export default function About() {
   return (
     <section className="xl:h-[860px] pb-12 my-3 md:my-7 xl:my-12">
@@ -143,9 +142,10 @@ export default function About() {
                             key={index}
                           >
                             <div className="flex items-center gap-x-3">
-
-                            <div className="font-medium text-primary">{skill.icon}</div>
-                            <div className="font-medium">{skill.name}</div>
+                              <div className="font-medium text-primary">
+                                {skill.icon}
+                              </div>
+                              <div className="font-medium">{skill.name}</div>
                             </div>
                           </div>
                         ))}
@@ -155,17 +155,9 @@ export default function About() {
                     <div>
                       <h4 className="mb-2">Tools</h4>
                       <div className="border border-b mb-4"></div>
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                      <div className="flex gap-x-8 gap-y-6 justify-center xl:justify-start items-center flex-wrap whitespace-normal">
                         {toolsData.map((tool, index) => (
-                          <div key={index}>
-                            <Image
-                              src={tool.imgPath}
-                              width={48}
-                              height={48}
-                              alt="The tools I use everyday"
-                              priority
-                            />
-                          </div>
+                          <div key={index} className="text-primary">{tool.icon}</div>
                         ))}
                       </div>
                     </div>
