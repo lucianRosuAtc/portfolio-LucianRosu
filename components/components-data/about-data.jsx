@@ -22,21 +22,21 @@ export const infoData = [
 ];
 
 // MARK: EDUCATION
-export const qualificationData = [
+export const educationData = [
   {
     university: "University of Leads",
-    qualification: "BSc in Computer Science",
-    years: "2010-2014",
+    qualification: "Learn to code for the Web ",   
+    years: "Mar 2021 - Apr 2021",
   },
   {
-    university: "University of Scrimba ",
-    qualification: "Diploma in Web Development",
-    years: "2018-2019",
+    university: "Scrimba",
+    qualification: "Frontend Developer Career Path", 
+    years: "Aug 2021 - Mar 2022",
   },
   {
-    university: "University of Intequal",
-    qualification: "Diploma in Software Development",
-    years: "2023-2024",
+    university: "Intequal",
+    qualification: "Software Developer Technician Level 3", 
+    years: "Jan 2023 - Apr 2024",
   },
 ];
 
@@ -45,12 +45,12 @@ export const experienceData = [
   {
     company: "Adopstar",
     role: "Web Developer",
-    years: "2023-2024",
+    years: "Jan 2023 - Apr 2024",
   },
   {
     company: "Frelancer",
-    role: "Web Developert",
-    years: "2022-2023",
+    role: "Web Developer",
+    years: "Jun 2022 - Jan 2023", 
   },
 ];
 
@@ -65,6 +65,8 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoVercel } from "react-icons/io5";
 import { GiZeppelin } from "react-icons/gi";
 import { CgFigma } from "react-icons/cg";
+import { SiSanity } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
 export const skillData = [
   {
@@ -76,7 +78,7 @@ export const skillData = [
     icon: <IoLogoCss3 size={20} />,
   },
   {
-    name: "Tailwindcss",
+    name: "TailwindCSS",
     icon: <SiTailwindcss size={20} />,
   },
   {
@@ -96,31 +98,55 @@ export const skillData = [
     icon: <BiLogoTypescript size={20} />,
   },
   {
+    name: "Sanity",
+    icon: <SiSanity size={20} />,
+  },
+  {
+    name: "Framer Motion",
+    icon: <LuFramer size={20} />,
+  },
+  {
+    name: "ClickUp",
+    icon: <SiClickup size={20} />,
+  },
+  {
     name: "Vercel",
     icon: <IoLogoVercel size={20} />,
   },
+  {
+    name: "GitHub",
+    icon: <FaGithub size={20} />,
+  },
 ];
+
+
 
 // MARK: TOOLS DATA
 import { TbBrandVscode } from "react-icons/tb";
 import { SiPnpm } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import { SiShadcnui } from "react-icons/si";
+import { LuFramer } from "react-icons/lu";
+import { SiClickup } from "react-icons/si";
+
 
 export const toolsData = [
   {
-    icon: <TbBrandVscode size={50} />,
+    name: "VS Code",
+    icon: <TbBrandVscode size={20} />,
   },
   {
-    icon: <SiPnpm size={40} />,
+    name: "PNPM",
+    icon: <SiPnpm size={16} />,
   },
   {
-    icon: <GiZeppelin size={50} />,
+    name: "Zeplin",
+    icon: <GiZeppelin size={20} />,
   },
   {
-    icon: <CgFigma size={50} />,
+    name: "Figma",
+    icon: <CgFigma size={20} />,
   },
-  {
-    icon: <FaGithub size={50} />,
-  },
+
 ];
+
+
+
