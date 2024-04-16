@@ -2,9 +2,9 @@ import { servicesData } from './components-data/services-data';
 
 export default function Services() {
   return (
-    <div className="mb-12 xl:mb-36 px-4">
+    <div className="my-12 xl:mb-36 px-4">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="mb-20 xl:mb-24 text-center mx-auto">My Services</h2>
+        <h2 className="mb-24 xl:mb-32 text-center mx-auto">My Services</h2>
 
         <div className="grid xl:grid-cols-3 justify-center gap-y-[75px] xl:gap-y-24 xl:gap-x-8">
           {servicesData.map((item, index) => {
