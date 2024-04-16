@@ -24,7 +24,7 @@ export default function MobileNav() {
       </SheetTrigger>
       <SheetContent className="dark:bg-lightDark w-full">
         <div className="flex flex-col items-center justify-between h-full py-8">
-          <div className="flex flex-col items-center justify-between gap-y-32">
+          <div className="flex flex-col items-center justify-between gap-y-28">
             <SheetClose asChild>
               <Link href="/">
                 <Image
@@ -32,7 +32,7 @@ export default function MobileNav() {
                   width={240}
                   height={60}
                   alt="Logo"
-                  className="object-cover w-60 h-16 rounded-md border-2 border-goldText cursor-pointer"
+                  className="object-cover w-60 h-16 rounded-md border-2 border-goldText cursor-pointer mt-6"
                   priority
                 />
               </Link>
