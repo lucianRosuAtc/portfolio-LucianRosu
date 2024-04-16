@@ -54,9 +54,9 @@ export default function WorkCarousel() {
   };
 
   return (
-    <div className="relative mb-4 max-w-7xl mx-auto">
+    <div className="relative mb-4 lg:mb-12 max-w-7xl mx-auto">
       <div className="flex flex-col mx-auto">
-        <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-md text-center mx-auto xl:mx-0 xl:text-left xl:h-60">
+        <div className="flex flex-col justify-center items-center xl:items-start mb-20 max-w-md text-center mx-auto xl:mx-0 xl:text-left xl:h-60">
           <h2 className="mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
             Here are some of my most recent projects. I'm always looking for new

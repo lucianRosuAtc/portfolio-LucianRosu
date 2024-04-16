@@ -48,7 +48,7 @@ export default function RecommendationsCarousel() {
   };
 
   return (
-    <div className="relative mb-4 max-w-7xl mx-auto">
+    <div className="relative mb-4 lg:mb-12 max-w-7xl mx-auto">
       <div className="flex flex-col mx-auto">
         <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-md text-center mx-auto xl:mx-0 xl:text-left xl:h-60">
           <h2 className="mb-4">Recommendations</h2>
@@ -76,8 +76,8 @@ export default function RecommendationsCarousel() {
                       <p className="px-4 pb-5 text-sm">{recommendation.job}</p>
                     </div>
                   </div>
-                  <CardDescription className="text-muted-foreground text-lg mb-2 font-light line-clamp-6 px-5 pb-16">
-                    {recommendation.description}
+                  <CardDescription className="text-muted-foreground h-64 text-lg mb-2 font-light px-5 pb-16">
+                    {recommendation.description} 
                   </CardDescription>
                 </Card>
               </div>

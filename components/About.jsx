@@ -135,7 +135,7 @@ export default function About() {
                       <h4 className="mb-2">Skils</h4>
                       <div className="border border-b mb-4"></div>
 
-                      <div className="grid grid-cols-2 gap-y-3 xl:gap-y-6 text-xs md:text-lg">
+                      <div className="grid grid-cols-2 gap-y-3 xl:gap-y-6 text-xs sm:text-lg">
                         {skillData.map((skill, index) => (
                           <div
                             className="w-1/2 text-center xl:text-left mx-auto xl:mx-0"
@@ -156,10 +156,10 @@ export default function About() {
                       <h4 className="mb-2">Tools</h4>
                       <div className="border border-b mb-4"></div>
 
-                      <div className="grid grid-cols-2 gap-y-3 xl:gap-y-6 text-xs md:text-lg">
+                      <div className="grid grid-cols-2 gap-y-3 xl:gap-y-6 text-xs sm:text-lg">
                         {toolsData.map((tool, index) => (
                           <div
-                          className="w-1/2  text-center xl:text-left mx-auto xl:mx-0"
+                            className="w-1/2  text-center xl:text-left mx-auto xl:mx-0"
                             key={index}
                           >
                             <div className="flex items-center gap-x-3">
