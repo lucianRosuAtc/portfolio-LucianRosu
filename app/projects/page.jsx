@@ -24,7 +24,6 @@ export default function Projects() {
     category === "All Projects" ? item : item.category === category
   );
 
-  // console.log(filteredProjects);
   return (
     <section className="min-h-screen pt-12">
       <div className="px-8 mx-auto">
