@@ -1,3 +1,4 @@
+
 export const recommendationsData = [
   {
     img: "/img/recommendations/AlexErnila.jpg",
