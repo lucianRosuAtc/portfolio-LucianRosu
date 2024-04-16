@@ -10,7 +10,7 @@ export const projectData = [
       gitHub: "https://github.com/lucianRosuAtc/sanity-nextjs",
     },
     {
-      img: "/img/work/TMDB App.webp",
+      img: "/img/work/tmdbSmall.webp",
       category: "Nextjs",
       name: "The Movie Data Base",
       description:
@@ -28,7 +28,7 @@ export const projectData = [
       gitHub: "https://github.com/lucianRosuAtc/musicPlayer",
     },
     {
-      img: "/img/work/Password Generator.png",
+      img: "/img/work/passwordGen.webp",
       category: "JavaScript",
       name: "Password Generator",
       description:
