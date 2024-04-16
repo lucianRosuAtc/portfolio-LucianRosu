@@ -27,12 +27,14 @@ export default function Hero() {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
+              <a href="/CV/Lucian Rosu_CV Nov2024.odt" download>
               <Button
                 variant="secondary"
                 className="gap-2 border border-primary"
               >
-                Download CV <Download size={18} />
+                  Download CV <Download size={18} />
               </Button>
+                </a>
             </div>
             <Socials />
           </div>
