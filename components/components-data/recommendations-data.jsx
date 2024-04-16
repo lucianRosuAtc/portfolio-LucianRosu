@@ -26,6 +26,6 @@ export const recommendationsData = [
     name: "Miguel P.Gomez",
     job:"Frontend Developer",
     description:
-      "I met Lucian Rosu while we were studying at Scrimba. Lucian is smart, professional and deadline oriented. Not only did he become a great developer, but he was encouraging and helping the rest of us to achieve it. Highly recommended.",
+      "I met Lucian Rosu while we were studying at Scrimba. Lucian is smart, professional, and deadline oriented. Not only did he become a great developer, but he was also encouraging and helping the rest of us to achieve it. He is a team player and highly recommended.",
   },
 ];

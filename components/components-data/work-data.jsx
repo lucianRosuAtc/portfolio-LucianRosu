@@ -19,7 +19,7 @@ export const projectData = [
       gitHub: "https://github.com/lucianRosuAtc/tmdb-api",
     },
     {
-      img: "/img/work/Media Player.webp",
+      img: "/img/work/mediaPlayer.webp",
       category: "JavaScript",
       name: "Music Player",
       description:
