@@ -61,7 +61,7 @@ export default function RecommendationsCarousel() {
           <Slider {...settings} className="mx-auto max-w-7xl px-4 md:px-0">
             {recommendationsData.map((recommendation, index) => (
               <div key={index} className="mx-auto">
-                <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg  mb-12 border border-red-500">
+                <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg mb-12">
                   <div className="flex items-center">
                     <Image
                       src={recommendation.img}
@@ -78,7 +78,7 @@ export default function RecommendationsCarousel() {
                       <p className="px-4 pb-5 text-xs">{recommendation.job}</p>
                     </div>
                   </div>
-                  <CardDescription className="h-64 flex-grow overflow-y-auto text-sm md:text-base lg:text-lg text-muted-foreground line-clamp-6 font-light px-5 pb-20">
+                  <CardDescription className="h-64 flex-grow overflow-y-auto md:text-base xl:text-lg text-muted-foreground line-clamp-6 font-light px-5 pb-10">
                     {recommendation.description}
                   </CardDescription>
                 </Card>

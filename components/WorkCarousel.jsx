@@ -67,12 +67,12 @@ export default function WorkCarousel() {
           </Link>
         </div>
 
-        <div className="">
-          <Slider {...settings} className="mx-auto max-w-7xl px-4 md:px-0">
+        <div>
+          <Slider {...settings} className="mx-auto max-w-7xl px-1">
             {projectData.map((project, index) => (
               <div key={index} className="mx-auto">
                 <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12">
-                  <Badge className="absolute top-6 ml-4 md:ml-8 mb-2 uppercase text-sm font-medium shadow-lg dark:shadow-lg dark:shadow-secondary">
+                  <Badge className="absolute top-6 left-3 md:left-5 mb-2 uppercase text-sm font-medium shadow-lg dark:shadow-lg dark:shadow-secondary">
                     {project.category}
                   </Badge>
                   <Image
@@ -80,7 +80,7 @@ export default function WorkCarousel() {
                     alt="project"
                     width={300}
                     height={300}
-                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-[290px] h-80 mx-auto object-cover object-center rounded-lg px-1 mt-4"
+                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-60 h-60 sm:w-80 sm:h-80 mx-auto object-cover object-center rounded-lg px-1 mt-4"
                     priority="true"
                   />
 
@@ -99,7 +99,7 @@ export default function WorkCarousel() {
                     </Link>
                   </div>
                   <h4 className="px-4 py-5">{project.name}</h4>
-                  <CardDescription className="text-muted-foreground text-lg mb-2 font-light line-clamp-2 px-5 pb-16">
+                  <CardDescription className="text-muted-foreground md:text-lg mb-2 font-light line-clamp-2 px-5 pb-16">
                     {project.description}
                   </CardDescription>
                 </Card>
