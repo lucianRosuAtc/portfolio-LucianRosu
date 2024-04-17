@@ -78,7 +78,7 @@ export default function RecommendationsCarousel() {
                       <p className="px-4 pb-5 text-xs">{recommendation.job}</p>
                     </div>
                   </div>
-                  <CardDescription className="h-64 flex-grow overflow-y-auto md:text-base xl:text-lg text-muted-foreground line-clamp-6 font-light px-5 pb-10">
+                  <CardDescription className="h-64 md:text-base xl:text-lg text-muted-foreground font-light px-5 pb-10">
                     {recommendation.description}
                   </CardDescription>
                 </Card>
