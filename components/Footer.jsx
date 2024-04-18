@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-center px-4 text-white py-8  lg:pt-14">
+      <div className="flex justify-center px-4 text-white py-8 lg:pt-14">
         <p className="text-sm text-center">
           <span className="pr-1">&copy;</span>{" "}
           {`${year} Lucian Dev, All rights reserved.`}{" "}
