@@ -1,7 +1,7 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";

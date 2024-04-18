@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
-import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
+import React, { useState } from "react";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Link from "next/link";
 
