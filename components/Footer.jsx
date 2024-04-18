@@ -19,7 +19,8 @@ export default function Footer() {
         <div className=" flex flex-col md:flex-row justify-between items-center gap-y-8">
           <Logo />
 
-          {/* MARK: navigation links (<NavBar /> with some custom changes)*/}
+          {/* MARK: navigation links 
+          */}
           <div className="flex gap-x-8 items-center">
             {navigationlinks.map((navlink) => (
               <Link
@@ -33,7 +34,7 @@ export default function Footer() {
                     animate={{ y: 0 }}
                     transition={{ type: "tween" }}
                     layoutId="underline"
-                    className="absolute left-0 top-full h-[2px] bg-primary w-full mt-1"
+                    className="absolute left-0 top-full h-[2px] bg-primary w-full"
                   />
                 )}
                 {navlink.name}
@@ -41,7 +42,8 @@ export default function Footer() {
             ))}
           </div>
 
-          {/* MARK: social media links (<Social /> with some custom changes) */}
+          {/* MARK: social media links 
+           */}
           <div className="flex gap-x-8 mx-auto xl:mx-0">
             {social.map((item, index) => (
               <a

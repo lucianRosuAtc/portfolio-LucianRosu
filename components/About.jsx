@@ -63,9 +63,10 @@ export default function About() {
                   <h3 className="mb-8 text-center xl:text-left">
                     My Awesome Journey
                   </h3>
-                  {/*MARK:  experience & education  */}
+             
                   <div className="grid md:grid-cols-2 gap-y-8">
-                    {/*MARK:  experience  */}
+                    {/*MARK:  experience 
+                     */}
                     <div className="flex flex-col gap-y-6">
                       <div className="flex gap-x-4 items-center text-xl text-primary">
                         <Briefcase />
