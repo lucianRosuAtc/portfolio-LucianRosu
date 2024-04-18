@@ -81,3 +81,7 @@ h4 {
 .badge {
   @apply flex items-center gap-x-4 z-10 w-[190px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-md;
 }
+
+.active{
+  @apply border-b-2 border-b-primary pb-1 transition-all;
+}
