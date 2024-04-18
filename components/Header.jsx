@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ThemeToggler from "./ThemeToggler";
 import Logo from "./Logo";
 import NavBar from "./NavBar";

@@ -1,4 +1,4 @@
-import { Gem, LaptopMinimal, TabletSmartphone, PanelsTopLeft } from "lucide-react";
+import { LaptopMinimal, TabletSmartphone, PanelsTopLeft } from "lucide-react";
 
 export const servicesData = [
     {

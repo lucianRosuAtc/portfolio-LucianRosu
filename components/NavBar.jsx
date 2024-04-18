@@ -20,7 +20,7 @@ export default function NavBar() {
               animate={{ y: 0 }}
               transition={{ type: "tween" }}
               layoutId="underline"
-              className="absolute left-0 top-full h-[2px] bg-primary w-full mt-1"
+              className="absolute left-0 top-full h-[2px] bg-primary w-full"
             />
           )}
           {navlink.name}
