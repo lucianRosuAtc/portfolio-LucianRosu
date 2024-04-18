@@ -35,7 +35,7 @@ export default function Projects() {
                 <TabsTrigger
                   key={index}
                   value={category}
-                  className="capitalize w-32"
+                  className="capitalize w-36"
                   onClick={() => setCategory(category)}
                 >
                   {category}

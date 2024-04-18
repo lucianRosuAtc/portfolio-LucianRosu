@@ -83,5 +83,5 @@ h4 {
 }
 
 .active{
-  @apply border-b-2 border-b-primary pb-1 transition-all;
+  @apply border-b-2 border-b-primary transition-all;
 }
