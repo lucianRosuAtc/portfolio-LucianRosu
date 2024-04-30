@@ -1,6 +1,13 @@
 
 export const recommendationsData = [
   {
+    img: "/img/recommendations/Kieran.jpeg",
+    name: "Kieran Colley",
+    job:"Senior Full Stack React/NextJs Developer @ Adopstar Ltd",
+    description:
+      "Lucian is a great person to work with, always wanting to learn new things and get stuck in. He has a great personality and a great work ethic.",
+  },
+  {
     img: "/img/recommendations/AlexErnila.jpg",
     name: "Alex Ernila",
     job:"Software Developer",
