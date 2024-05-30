@@ -2,7 +2,7 @@ export const recommendationsData = [
   {
     img: "/img/recommendations/Amber.jpg",
     name: "Amber Robeck",
-    job: "Full Stack Web Developer",
+    job: "Full Stack Web Developer @ edX",
     description:
       "Lucian is a fast learner with a unique approach to solving problems. Lucian is not afraid to dive into challenging tasks with a positive attitude. He is a great contributor to any team. I look forward to working with Lucian in the future and highly recommend him for any projects.",
   },
@@ -23,7 +23,7 @@ export const recommendationsData = [
   {
     img: "/img/recommendations/AlexErnila.jpg",
     name: "Alex Ernila",
-    job: "Software Developer",
+    job: "Software Developer @ Continental",
     description:
     "Lucian Rosu is one of the best among all the people I have ever worked with. He is a very productive person, hardworking, broad-minded and forward-thinking individual. Intelligent, ambitious, energetic and proactive perfectionist. The desire for proficiency make Lucian a valuable asset to the team.",
   },
