@@ -18,13 +18,14 @@ export default function RootLayout({ children }) {
     <>
       <Head>
       <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_TAG_MANAGER_ID}`}></script>
-      <script>
+      
+      {/* <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments)}
         gtag('js', new Date());
 
         gtag('config', `${process.env.GOOGLE_TAG_MANAGER_ID}`);
-      </script>
+      </script> */}
       </Head>
       <html lang="en">
       <body className={`${inter.className} max-w-[1920px] mx-auto`}>
