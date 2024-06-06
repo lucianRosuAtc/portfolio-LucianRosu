@@ -35,13 +35,29 @@ export default function Footer() {
 
         {/* MARK: Social Media
          */}
-        <div className="flex gap-x-8 items-center justify-center">
+        {/* <div className="flex gap-x-8 items-center justify-center">
           {social.map((item, index) => (
             <a
               href={item.url}
               key={index}
               target="_blank"
               className="text-primary hover:text-orange-100 dark:text-orange-100 dark:hover:text-primary text-3xl transition-all"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+      </div> */}
+
+      
+        {/* MARK: Social Media */}
+        <div className="flex gap-x-8 items-center justify-center">
+          {social.map((item, index) => (
+            <a
+              href={item.url}
+              key={index}
+              target="_blank"
+              className="text-secondary/80 hover:text-primary dark:text-orange-100 dark:hover:text-primary text-3xl transition-all shadow-lg p-2 rounded-full bg-gray-50 dark:bg-black/20 dark:shadow-gray-600 dark:shadow-sm object-cover object-center"
             >
               {item.name}
             </a>

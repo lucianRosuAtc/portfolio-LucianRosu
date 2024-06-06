@@ -9,7 +9,7 @@ export default function Contact() {
           <div className="flex items-center gap-x-4 text-primary text-lg mb-4">
             Get in Touch with Me
           </div>
-          <h1 className="my-4">Let's Build Together</h1>
+          <h1 className="my-4">Let&apos;s Build Together</h1>
           <p className="max-w-[600px] xl:max-w-[900px]">
             Embracing collaboration to leverage emerging technologies and drive
             innovation. Committed to delivering high-quality results through
