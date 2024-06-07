@@ -64,7 +64,8 @@ export default function MobileNav() {
                   href={item.url}
                   key={index}
                   target="_blank"
-                  className="text-4xl hover:text-primary text-foreground transition-all"
+                  // className="text-4xl hover:text-primary text-foreground transition-all"
+                   className="text-secondary/80 hover:text-primary dark:text-orange-100 dark:hover:text-primary text-3xl transition-all shadow-lg p-2 rounded-full bg-gray-50 dark:bg-black/20 dark:shadow-gray-600 dark:shadow-sm object-cover object-center"
                 >
                   {item.name}
                 </a>
