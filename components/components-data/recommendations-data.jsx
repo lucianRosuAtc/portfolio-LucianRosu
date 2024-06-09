@@ -35,4 +35,11 @@ export const recommendationsData = [
     description:
       "Lucian is a great person to work with, always wanting to learn new things and get stuck in. He has a great personality and a great work ethic.",
   },
+  {
+    img: "/img/recommendations/Liu.jpeg",
+    name: "Liu He",
+    job: "Web Developer @ Adopstar Ltd",
+    description:
+      "I had the pleasure of working with Lucian, where he proved to be an exceptional web developer. His expertise in both front-end and back-end technologies, combined with his keen eye for detail, consistently delivered top-notch web solutions. I highly recommend him for any web development role.",
+  },
 ];
