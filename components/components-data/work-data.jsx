@@ -36,4 +36,13 @@ export const projectData = [
       link: "https://password-generator13.netlify.app/",
       gitHub: "https://github.com/lucianRosuAtc/Password-Generator",
     },
+    {
+      img: "/img/work/AddToCart.png",
+      category: "Nextjs",
+      name: "Add To Cart",
+      description:
+        "Adding or removing items to the cart and updating the total price, proviging a simple checkout form.",
+      link: "https://test-cart-five.vercel.app/",
+      gitHub: "https://github.com/lucianRosuAtc/test-cart",
+    },
   ];
