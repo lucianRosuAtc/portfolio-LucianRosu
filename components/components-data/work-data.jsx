@@ -19,6 +19,15 @@ export const projectData = [
       gitHub: "https://github.com/lucianRosuAtc/tmdb-api",
     },
     {
+      img: "/img/work/AddToCart.png",
+      category: "Nextjs",
+      name: "Add To Cart",
+      description:
+        "Adding or removing items to the cart and updating the total price, proviging a simple checkout form.",
+      link: "https://test-cart-five.vercel.app/",
+      gitHub: "https://github.com/lucianRosuAtc/test-cart",
+    },
+    {
       img: "/img/work/mediaPlayer.webp",
       category: "JavaScript",
       name: "Music Player",
@@ -35,14 +44,5 @@ export const projectData = [
         "A Password Generator able to generate paswords between 10 and 16 caracteres constructed with HTML, CSS and Javascript.",
       link: "https://password-generator13.netlify.app/",
       gitHub: "https://github.com/lucianRosuAtc/Password-Generator",
-    },
-    {
-      img: "/img/work/AddToCart.png",
-      category: "Nextjs",
-      name: "Add To Cart",
-      description:
-        "Adding or removing items to the cart and updating the total price, proviging a simple checkout form.",
-      link: "https://test-cart-five.vercel.app/",
-      gitHub: "https://github.com/lucianRosuAtc/test-cart",
     },
   ];
