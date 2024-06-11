@@ -43,7 +43,7 @@ export default function Hero() {
             <Badge
               containerStyles="absolute top-[24%] -left-20"
               icon={<BriefcaseBusiness />}
-              endCountNum={15}
+              endCountNum={18}
               badgeText="Months Of Experience"
             />
             <Badge
