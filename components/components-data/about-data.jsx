@@ -150,3 +150,70 @@ export const toolsData = [
 
 
 
+// MARK: Skills and Data
+export const skillsToolsData = [
+  {
+    name: "HTML",
+    icon: <TiHtml5 size={20} />,
+  },
+  {
+    name: "CSS",
+    icon: <IoLogoCss3 size={20} />,
+  },
+  {
+    name: "TailwindCSS",
+    icon: <SiTailwindcss size={20} />,
+  },
+  {
+    name: "JavaScript",
+    icon: <IoLogoJavascript size={20} />,
+  },
+  {
+    name: "React",
+    icon: <FaReact size={20} />,
+  },
+  {
+    name: "Nextjs",
+    icon: <TbBrandNextjs size={20} />,
+  },
+  {
+    name: "TypeScript",
+    icon: <BiLogoTypescript size={20} />,
+  },
+  {
+    name: "Sanity",
+    icon: <SiSanity size={20} />,
+  },
+  {
+    name: "Framer Motion",
+    icon: <LuFramer size={20} />,
+  },
+  {
+    name: "ClickUp",
+    icon: <SiClickup size={20} />,
+  },
+  {
+    name: "Vercel",
+    icon: <IoLogoVercel size={20} />,
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub size={20} />,
+  },
+  {
+    name: "VS Code",
+    icon: <TbBrandVscode size={20} />,
+  },
+  {
+    name: "PNPM",
+    icon: <SiPnpm size={16} />,
+  },
+  {
+    name: "Zeplin",
+    icon: <GiZeppelin size={20} />,
+  },
+  {
+    name: "Figma",
+    icon: <CgFigma size={20} />,
+  },
+];

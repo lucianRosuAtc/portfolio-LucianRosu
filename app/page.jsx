@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <Services />
       <Work />
-      <RecommendationsCarousel /> 
+      <RecommendationsCarousel />
       <Cta />
     </main>
   );

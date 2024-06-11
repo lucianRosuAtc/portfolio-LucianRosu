@@ -1,5 +1,3 @@
-import DevImg from "./DevImg";
-import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { GraduationCap, Briefcase } from "lucide-react";
 import {
@@ -9,6 +7,7 @@ import {
   experienceData,
   toolsData,
 } from "./components-data/about-data";
+import SkillsToolsCarousel from "@/components/SkillsToolsCarousel";
 
 export default function About() {
   return (
@@ -18,12 +17,9 @@ export default function About() {
           About me
         </h2>
         <div className="flex flex-col xl:flex-row">
-          <div className="hidden relative xl:flex flex-1 justify-center">
-            <DevImg />
-          </div>
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="bg-transparent grid md:grid-cols-3 max-w-xl gap-y-2 md:border dark:border-none mx-auto xl:mx-0">
+              <TabsList className="bg-transparent grid md:grid-cols-3 max-w-xl gap-y-2 md:border dark:border-none mx-auto">
                 <TabsTrigger value="personal">My Info</TabsTrigger>
                 <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
                 <TabsTrigger value="skils">Skils</TabsTrigger>
@@ -31,19 +27,19 @@ export default function About() {
               {/*MARK:  My Info */}
               <div className="text-lg mt-12 xl:mt-8">
                 <TabsContent value="personal">
-                  <div className="text-center xl:text-left">
+                  <div className="text-center max-w-2xl mx-auto">
                     <h3 className="mb-4">
                       Unmatch Service Quality for Over 15 Months.
                     </h3>
-                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                    <p className="subtitle max-w-2xl mx-auto">
                       My expertise lies in creating innovative websites using
                       advanced technology, providing a dynamic and captivating
                       user experience.
                     </p>
-                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                    <div className="grid gap-4 my-12 max-w-xl mx-auto">
                       {infoData.map((info, index) => (
                         <div
-                          className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                          className="flex items-center gap-x-4 sm:mx-auto"
                           key={index}
                         >
                           <div className="text-primary">{info.icon}</div>
@@ -60,12 +56,10 @@ export default function About() {
                 </TabsContent>
 
                 <TabsContent value="qualifications">
-                  <h3 className="mb-8 text-center xl:text-left">
-                    My Awesome Journey
-                  </h3>
-             
-                  <div className="grid md:grid-cols-2 gap-y-8">
-                    {/*MARK:  experience 
+                  <h3 className="mb-8 text-center">My Awesome Journey</h3>
+
+                  <div className="grid md:grid-cols-2 gap-y-8 max-w-2xl mx-auto">
+                    {/*MARK:  experience
                      */}
                     <div className="flex flex-col gap-y-6">
                       <div className="flex gap-x-4 items-center text-xl text-primary">
@@ -130,7 +124,7 @@ export default function About() {
 
                 {/*MARK: skils */}
                 <TabsContent value="skils">
-                  <div className="text-center xl:text-left">
+                  <div className="text-center max-w-2xl mx-auto">
                     <h3 className="mb-8">The Skills and Tools I Use Daily</h3>
                     <div className="mb-16">
                       <h4 className="mb-2">Skils</h4>
@@ -139,7 +133,7 @@ export default function About() {
                       <div className="grid grid-cols-2 gap-y-3 xl:gap-y-6 text-xs sm:text-lg">
                         {skillData.map((skill, index) => (
                           <div
-                            className="w-1/2 text-center xl:text-left mx-auto xl:mx-0"
+                            className="w-1/2 text-center mx-auto"
                             key={index}
                           >
                             <div className="flex items-center gap-x-3">
@@ -160,7 +154,7 @@ export default function About() {
                       <div className="grid grid-cols-2 gap-y-3 xl:gap-y-6 text-xs sm:text-lg">
                         {toolsData.map((tool, index) => (
                           <div
-                            className="w-1/2  text-center xl:text-left mx-auto xl:mx-0"
+                            className="w-1/2  text-center mx-auto"
                             key={index}
                           >
                             <div className="flex items-center gap-x-3">
@@ -180,6 +174,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <SkillsToolsCarousel />
     </section>
   );
 }
