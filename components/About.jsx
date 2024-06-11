@@ -29,7 +29,7 @@ export default function About() {
                 <TabsContent value="personal">
                   <div className="text-center max-w-2xl mx-auto">
                     <h3 className="mb-4">
-                      Unmatch Service Quality for Over 15 Months.
+                      Unmatch Service Quality for Over 18 Months.
                     </h3>
                     <p className="subtitle max-w-2xl mx-auto">
                       My expertise lies in creating innovative websites using
