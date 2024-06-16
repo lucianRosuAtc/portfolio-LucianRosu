@@ -3,6 +3,7 @@
  import Header from "@/components/Header";
  import Footer from "@/components/Footer";
  import { ThemeProvider } from "@/components/ThemeProvider";
+import ScrollToTopButton from "@/components/ScrollToTopBtn";
 
 
  const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +21,7 @@
          <ThemeProvider attribute='class'  defaultTheme="system">
            <Header />
            {children}
+           <ScrollToTopButton />
            <Footer />
          </ThemeProvider>
        </body>

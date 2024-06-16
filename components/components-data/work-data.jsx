@@ -45,6 +45,15 @@ export const projectData = [
       link: "https://password-generator13.netlify.app/",
       gitHub: "https://github.com/lucianRosuAtc/Password-Generator",
     },
+    {
+      img: "/img/work/Weather App.webp",
+      category: "JavaScript",
+      name: "Weather App",
+      description:
+        "A simple weather app that shows the current weather in a city, constructed with HTML, CSS and Javascript.",
+      link: "https://weather-app-mu-pearl-99.vercel.app/",
+      gitHub: "https://github.com/lucianRosuAtc/Weather-App",
+    },
   ];
 
   export const customerProjectData = [
