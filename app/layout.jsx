@@ -3,7 +3,7 @@
  import Header from "@/components/Header";
  import Footer from "@/components/Footer";
  import { ThemeProvider } from "@/components/ThemeProvider";
-import ScrollToTopButton from "@/components/ScrollToTopBtn";
+ import ScrollToTopButton from "@/components/ScrollToTopBtn";
 
 
  const inter = Inter({ subsets: ["latin"] });
