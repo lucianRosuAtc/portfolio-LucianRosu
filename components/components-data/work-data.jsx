@@ -60,7 +60,7 @@ export const projectData = [
     {
       img: "/img/customerWork/CustomerWebsite.png",
       category: "Nextjs",
-      name: "My Website",
+      name: "Customer Website",
       description:
         "Website build for a plumber company, with a simple design and easy to navigate.",
       link: "https://my-website-sigma-fawn.vercel.app/",
