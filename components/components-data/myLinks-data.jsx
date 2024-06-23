@@ -12,7 +12,7 @@ export const navigationlinks = [
 // MARK: SOCIAL DATA
 export const social = [
     {
-        url: "https://www.linkedin.com/feed/?trk=nav_back_to_linkedin",
+        url: "https://www.linkedin.com/in/lucian-rosu-atc/",
         name: <RiLinkedinFill />,
     },
     {
