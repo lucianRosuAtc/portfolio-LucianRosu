@@ -10,7 +10,7 @@ import { Link2Icon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { projectData } from "@/components/components-data/work-data";
-import CustomerProjects from "@/components/CustomerProjects";
+// import CustomerProjects from "@/components/CustomerProjects";
 
 const uniqueCategories = [
   "All Projects",
@@ -27,7 +27,7 @@ export default function Projects() {
 
   return (
     <section className="min-h-screen pt-12">
-      <CustomerProjects />
+      {/* <CustomerProjects /> */}
       <div className="px-8 mx-auto">
         <h2 className="mb-8 xl:mb-16 text-center mx-auto">My Projects</h2>
         <Tabs defaultValue={category} className="mb-12 xl:mb-24">
