@@ -19,6 +19,15 @@ export const projectData = [
       gitHub: "https://github.com/lucianRosuAtc/my-website",
     },
     {
+      img: "/img/customerWork/Cake Alchemy.png",
+      category: "Nextjs - !Work on Progress",
+      name: "Cake Alchemy",
+      description:
+        "Website build for a bakery. Enjouy the cool animations and the beautiful design.",
+      link: "https://cake-alchemy.vercel.app/",
+      gitHub: "https://github.com/lucianRosuAtc/Cake-Alchemy",
+    },
+    {
       img: "/img/work/tmdbSmall.webp",
       category: "Nextjs",
       name: "The Movie Data Base",
