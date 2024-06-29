@@ -20,10 +20,10 @@ export const projectData = [
     },
     {
       img: "/img/customerWork/Cake Alchemy.png",
-      category: "Nextjs - !Work on Progress",
+      category: "Nextjs",
       name: "Cake Alchemy",
       description:
-        "Website build for a bakery. Enjouy the cool animations and the beautiful design.",
+        "- !Work on Progress - Website build for a bakery. Enjouy the cool animations and the beautiful design.",
       link: "https://cake-alchemy.vercel.app/",
       gitHub: "https://github.com/lucianRosuAtc/Cake-Alchemy",
     },
