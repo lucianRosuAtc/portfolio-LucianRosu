@@ -33,7 +33,7 @@ export default function WorkCarousel() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: false,
         },
@@ -42,7 +42,7 @@ export default function WorkCarousel() {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
       {
@@ -58,7 +58,7 @@ export default function WorkCarousel() {
   return (
     <div className="relative my-4 lg:my-12 container mx-auto">
       <div className="flex flex-col mx-auto">
-        <div className="flex flex-col justify-center items-center xl:items-start mb-20 max-w-md text-center mx-auto xl:mx-0 xl:text-left xl:h-60">
+        <div className="flex flex-col justify-center items-center xl:items-start mb-20 max-w-md text-center mx-auto xl:mx-0 xl:text-left">
           <h2 className="my-4">Latest Projects</h2>
           <p className="subtitle mb-8">
             Here are some of my most recent projects. I'm always looking for new
@@ -70,7 +70,7 @@ export default function WorkCarousel() {
         </div>
 
         <div>
-          <Slider {...settings} className="mx-auto container px-1">
+          <Slider {...settings} className="mx-auto">
             {projectData.map((project, index) => (
               <div key={index} className="mx-auto">
                 <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12 p-1">
@@ -103,8 +103,8 @@ export default function WorkCarousel() {
                       <RiGithubFill size={34} />
                     </Link>
                   </div>
-                  <h4 className="px-4 py-5">{project.name}</h4>
-                  <CardDescription className="text-muted-foreground md:text-base xl:text-lg mb-2 font-light line-clamp-2 px-5 pb-16">
+                  <h4 className="pl-4 py-5">{project.name}</h4>
+                  <CardDescription className="text-muted-foreground md:text-base xl:text-lg mb-2 font-light line-clamp-2 px-5 pb-12">
                     {project.description}
                   </CardDescription>
                 </Card>
