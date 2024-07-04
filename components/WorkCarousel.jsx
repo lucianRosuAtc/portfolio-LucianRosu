@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Card, CardDescription } from "./ui/card";
 import { RiGithubFill } from "react-icons/ri";
-import { Link2Icon } from "lucide-react";
+import { Link } from "lucide-react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
 import { projectData } from "./components-data/work-data";
@@ -86,18 +86,19 @@ export default function WorkCarousel() {
 
                   <div className="flex justify-center">
                     <Link
+                      href={project.link}
+                      target="_blank"
+                      className="absolute top-1/2 transform -translate-y-1/2 flex justify-center items-center bg-secondary w-[54px] h-[54px] rounded-full scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-white hover:text-primary hover:border-2 hover:border-primary"
+                    >
+                      <Link />
+                      {/* This is the Lucide icon component named Link */}
+                    </Link>
+                    <Link
                       href={project.gitHub}
                       target="_blank"
                       className="absolute top-1/3 transform -translate-y-1/2 flex justify-center items-center bg-secondary w-[54px] h-[54px] rounded-full scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-white hover:text-primary hover:border-2 hover:border-primary"
                     >
                       <RiGithubFill size={34} />
-                    </Link>
-                    <Link
-                      href={project.link}
-                      target="_blank"
-                      className="absolute top-1/2 transform -translate-y-1/2 flex justify-center items-center bg-secondary w-[54px] h-[54px] rounded-full scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-white hover:text-primary hover:border-2 hover:border-primary"
-                    >
-                      <Link2Icon />
                     </Link>
                   </div>
                   <h4 className="px-4 py-5">{project.name}</h4>
