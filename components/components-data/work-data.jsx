@@ -19,8 +19,8 @@ export const projectData = [
   {
     img: "/img/work/tmdbSmall.webp",
     category: "Nextjs",
-    name: "The Movie Data Base",
-    description: "Using The Movie Database API to keep the app updated with the latest films.",
+    name: "The Movie Data Base(TMDB)",
+    description: "Using TMDB API to keep the app updated with the latest films.",
     link: "https://tmdb-api-eta.vercel.app/",
     gitHub: "https://github.com/lucianRosuAtc/tmdb-api",
   },
@@ -68,12 +68,12 @@ export const projectData = [
 
 
 
-// export const customerProjectData = [
-//   {
-//     img: "/img/customerWork/CustomerWebsite.png",
-//     category: "Nextjs",
-//     name: "Customer Website",
-//     description: "Website build for a plumber company, with a simple design and easy to navigate.",
-//     link: "https://my-website-sigma-fawn.vercel.app/",
-//   },
-// ]
+export const customerProjectData = [
+  {
+    img: "/img/customerWork/CustomerWebsite.png",
+    category: "Nextjs",
+    name: "Customer Website",
+    description: "Website build for a plumber company, with a simple design and easy to navigate.",
+    link: "https://my-website-sigma-fawn.vercel.app/",
+  },
+]

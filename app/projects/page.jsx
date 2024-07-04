@@ -59,7 +59,7 @@ export default function Projects() {
                     alt="project"
                     width={300}
                     height={300}
-                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-auto h-80 mx-auto object-cover object-center rounded-lg px-1 mt-4"
+                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-full h-80 mx-auto object-cover object-center rounded-lg p-1 mt-4"
                     priority="true"
                   />
 

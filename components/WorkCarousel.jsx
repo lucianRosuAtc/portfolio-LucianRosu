@@ -73,7 +73,7 @@ export default function WorkCarousel() {
           <Slider {...settings} className="mx-auto container px-1">
             {projectData.map((project, index) => (
               <div key={index} className="mx-auto">
-                <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12">
+                <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12 p-1">
                   <Badge className="absolute top-6 left-3 md:left-5 mb-2 uppercase text-sm font-medium shadow-lg dark:shadow-lg dark:shadow-secondary">
                     {project.category}
                   </Badge>
@@ -82,7 +82,7 @@ export default function WorkCarousel() {
                     alt="project"
                     width={300}
                     height={300}
-                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-60 h-60 sm:w-80 sm:h-80 mx-auto object-cover object-center rounded-lg px-1 mt-4"
+                    className="shadow-lg dark:shadow-lg dark:shadow-secondary w-full h-80 mx-auto object-cover object-center rounded-lg p-1 mt-4"
                     priority="true"
                   />
 
