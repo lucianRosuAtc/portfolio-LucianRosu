@@ -11,7 +11,7 @@ import SkillsToolsCarousel from "@/components/SkillsToolsCarousel";
 
 export default function About() {
   return (
-    <section className="pb-16 my-3 md:my-7 xl:my-12">
+    <section className="pb-16 my-3 md:my-7 xl:my-16">
       <div className="flex flex-col px-4 md:px-12 mx-auto">
         <h2 className="relative flex items-center justify-between mb-8 xl:mb-16 mx-auto">
           About me
