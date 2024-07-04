@@ -19,7 +19,7 @@ export default function WorkCarousel() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3500,
+    speed: 3000,
     autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
