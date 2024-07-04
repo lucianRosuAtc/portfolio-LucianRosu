@@ -3,13 +3,12 @@ import React, { useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Link from "next/link";
-
 import { Card, CardDescription } from "@/components/ui/card";
 
-import { Link2Icon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { customerProjectData } from "@/components/components-data/work-data";
+import { Globe } from "lucide-react";
 
 const customerUniqueCategories = [
   "All Projects",
@@ -70,7 +69,7 @@ export default function CustomerProjects() {
                       target="_blank"
                       className="absolute top-1/3 transform -translate-y-1/2 flex justify-center items-center bg-secondary w-[54px] h-[54px] rounded-full scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-white hover:text-primary hover:border-2 hover:border-primary"
                     >
-                      <Link2Icon />
+                      <Globe />
                     </Link>
                   </div>
 
