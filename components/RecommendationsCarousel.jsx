@@ -48,7 +48,7 @@ export default function RecommendationsCarousel() {
   };
 
   return (
-    <div className="relative mb-4 lg:mb-12 max-w-7xl mx-auto">
+    <div className="relative mb-4 lg:mb-12 container mx-auto">
       <div className="flex flex-col mx-auto">
         <div className="flex flex-col justify-center items-center xl:items-start mb-12 max-w-md text-center mx-auto xl:mx-0 xl:text-left">
           <h2 className="mb-4">Recommendations</h2>
@@ -58,7 +58,7 @@ export default function RecommendationsCarousel() {
         </div>
 
         <div className="">
-          <Slider {...settings} className="mx-auto max-w-7xl px-4 md:px-0">
+          <Slider {...settings} className="mx-auto container px-4 md:px-0">
             {recommendationsData.map((recommendation, index) => (
               <div key={index} className="mx-auto">
                 <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg mb-12">
