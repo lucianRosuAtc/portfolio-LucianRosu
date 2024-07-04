@@ -10,8 +10,7 @@ export const recommendationsData = [
     img: "/img/recommendations/Jade.jpeg",
     name: "Jade Page",
     job: "Senior Web Developer @ Adopstar Ltd",
-    description:
-      "An absolute pleasure to work with, Lucian Rosu radiates positivity and kindness, fostering a harmonious and supportive work environment effortlessly.",
+    description: "An absolute pleasure to work with, Lucian Rosu radiates positivity and kindness, fostering a harmonious and supportive work environment effortlessly. His dedication and enthusiasm are truly inspiring, consistently going above and beyond to ensure the success of every project."
   },
   {
     img: "/img/recommendations/Gilson.jpg",
@@ -33,7 +32,8 @@ export const recommendationsData = [
     name: "Kieran Colley",
     job: "Senior Full Stack React/NextJs Developer @ Adopstar Ltd",
     description:
-      "Lucian is a great person to work with, always wanting to learn new things and get stuck in. He has a great personality and a great work ethic.",
+      // "Lucian is a great person to work with, always wanting to learn new things and get stuck in. He has a great personality and a great work ethic. ",
+      "Lucian is a great person to work with, always wanting to learn new things and get stuck in. He has a great personality and a great work ethic. Lucian's exceptional communication skills and collaborative spirit make him an invaluable asset to any team.",
   },
   {
     img: "/img/recommendations/Liu.jpeg",
