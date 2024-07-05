@@ -27,7 +27,7 @@ export default function Hero() {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <a href="/CV/Lucian Rosu_CV_2024.docx" download>
+              <a href="/CV/Lucian Rosu_CV_2024.pdf" download>
               <Button
                 variant="secondary"
                 className="gap-2 border border-primary"
