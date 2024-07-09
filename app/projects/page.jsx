@@ -6,10 +6,10 @@ import Link from "next/link";
 
 import { Card, CardDescription } from "@/components/ui/card";
 import { RiGithubFill } from "react-icons/ri";
-import { Link2Icon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { projectData } from "@/components/components-data/work-data";
+import { Globe } from "lucide-react";
 // import CustomerProjects from "@/components/CustomerProjects";
 
 const uniqueCategories = [
@@ -76,7 +76,7 @@ export default function Projects() {
                       target="_blank"
                       className="absolute top-1/2 transform -translate-y-1/2 flex justify-center items-center bg-secondary w-[54px] h-[54px] rounded-full scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-white hover:text-primary hover:border-2 hover:border-primary"
                     >
-                      <Link2Icon />
+                      <Globe />
                     </Link>
                   </div>
 

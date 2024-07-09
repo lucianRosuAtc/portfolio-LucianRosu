@@ -14,7 +14,6 @@ import Image from "next/image";
 
 import { navigationlinks } from "./components-data/myLinks-data";
 import { social } from "./components-data/myLinks-data";
-import Logo from "./Logo";
 
 export default function MobileNav() {
   const pathname = usePathname();

@@ -12,9 +12,9 @@ const year = date.getFullYear();
 export default function Footer() {
   const pathname = usePathname();
   return (
-    <div className="bg-[#eheheh] dark:bg-secondary/80 pt-8 border-t-2 border-primary ">
-      <div className="grid lg:grid-cols-3 justify-center items-center gap-y-8">
-        <div className="mx-auto">
+    <div className="bg-[#eheheh] dark:bg-secondary/80 pt-8 border-t-2 border-primary">
+      <div className="grid lg:grid-cols-3 justify-center items-center gap-y-8 container">
+        <div className="mx-auto lg:mx-0">
           <Logo />
         </div>
 
@@ -23,9 +23,8 @@ export default function Footer() {
         <div className="flex gap-x-8 items-center justify-center">
           {navigationlinks.map((navlink) => (
             <Link
-              className={`link text-secondary/80 dark:text-white hover:text-primary pb-1 font-semibold ${
-                pathname === navlink.url ? "active" : ""
-              }`}
+              className={`link text-secondary/80 dark:text-white hover:text-primary pb-1 font-semibold ${pathname === navlink.url ? "active" : ""
+                }`}
               key={navlink.url}
               href={navlink.url}
             >
@@ -35,7 +34,8 @@ export default function Footer() {
         </div>
 
         {/* MARK: Social Media */}
-        <div className="flex gap-x-8 items-center justify-center">
+        {/* <div className="flex gap-x-8 items-center justify-center"> */}
+        <div className="flex gap-x-8 items-center justify-center lg:justify-end">
           {social.map((item, index) => (
             <a
               href={item.url}
@@ -51,8 +51,8 @@ export default function Footer() {
 
       <div className="flex justify-center px-4 text-secondary/80 dark:text-white py-8 lg:pt-14">
         <p className="text-sm text-center font-medium">
-          <span className="pr-1">&copy;</span>{" "}
-          {`${year} Lucian Dev, All rights reserved.`}{" "}
+          <span className="pr-1">&copy;</span>
+          {`${year} Lucian Dev, All rights reserved.`}
         </p>
       </div>
     </div>
