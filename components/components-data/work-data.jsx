@@ -48,22 +48,16 @@ export const projectData = [
     link: "https://music-player-13.netlify.app/",
     gitHub: "https://github.com/lucianRosuAtc/musicPlayer",
   },
-  // {
-  //   img: "/img/work/passwordGen.webp",
-  //   category: "JavaScript",
-  //   name: "Password Generator",
-  //   description: "A Password Generator able to generate paswords between 10 and 16 caracteres constructed with HTML, CSS and Javascript.",
-  //   link: "https://password-generator13.netlify.app/",
-  //   gitHub: "https://github.com/lucianRosuAtc/Password-Generator",
-  // },
-  // {
-  //   img: "/img/work/Weather App.webp",
-  //   category: "JavaScript",
-  //   name: "Weather App",
-  //   description: "A simple weather app that shows the current weather in a city, constructed with HTML, CSS and Javascript.",
-  //   link: "https://weather-app-mu-pearl-99.vercel.app/",
-  //   gitHub: "https://github.com/lucianRosuAtc/Weather-App",
-  // },
+
+   {
+    img: "/img/work/mediaPlayerWithPlaylist.png",
+    category: "JavaScript",
+    name: "Music Player with Playlist",
+    description: "A music player with playlist build with HTML, CSS and Javascript.",
+    link: "https://music-player-with-playlist.vercel.app/",
+    gitHub: "https://github.com/lucianRosuAtc/Music-Player-With-Playlist",
+  },
+
 ];
 
 
