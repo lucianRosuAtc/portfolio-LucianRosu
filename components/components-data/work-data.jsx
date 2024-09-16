@@ -13,7 +13,7 @@ export const projectData = [
     category: "Nextjs",
     name: "Plumber Solutions",
     description: "Website build for a plumber company, with a simple design and easy to navigate.",
-    link: "https://my-website-sigma-fawn.vercel.app/",
+    link: "https://plumber-services-sigma-fawn.vercel.app/",
     gitHub: "https://github.com/lucianRosuAtc/my-website",
   },
   {
@@ -61,7 +61,7 @@ export const projectData = [
 ];
 
 
-
+// MARK: Customer Projects 
 export const customerProjectData = [
   {
     img: "/img/customerWork/CustomerWebsite.png",
