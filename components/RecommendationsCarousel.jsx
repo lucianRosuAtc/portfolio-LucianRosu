@@ -13,8 +13,8 @@ export default function RecommendationsCarousel() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3500,
-    autoplaySpeed: 3000,
+    speed: 5500,
+    autoplaySpeed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
