@@ -1,7 +1,15 @@
 
 export const projectData = [
   {
-    img: "/img/customerWork/Cake Alchemy.png",
+    img: "/img/work/Skin Canvas Studio.webp",
+    category: "Nextjs",
+    name: "Skin Canvas Studio",
+    description: "Website build for a tattoo studio. Enjoy the cool animations and the beautiful design.",
+    link: "https://skin-canvas-studio.vercel.app/",
+    gitHub: "https://github.com/lucianRosuAtc/skin-canvas-studio",
+  },
+  {
+    img: "/img/work/Cake Alchemy.png",
     category: "Nextjs",
     name: "Cake Alchemy",
     description: "Website build for a bakery. Enjoy the cool animations and the beautiful design.",
@@ -9,7 +17,7 @@ export const projectData = [
     gitHub: "https://github.com/lucianRosuAtc/Cake-Alchemy",
   },
   {
-    img: "/img/customerWork/CustomerWebsite.png",
+    img: "/img/work/PlumberSolutions.png",
     category: "Nextjs",
     name: "Plumber Solutions",
     description: "Website build for a plumber company, with a simple design and easy to navigate.",

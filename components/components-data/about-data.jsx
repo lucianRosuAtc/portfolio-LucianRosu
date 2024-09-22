@@ -38,6 +38,11 @@ export const educationData = [
     qualification: "Software Developer Technician Level 3", 
     years: "Jan 2023 - Apr 2024",
   },
+  {
+    university: "Exeter College",
+    qualification: "Software Development / Web Development Bootcamp", 
+    years: "Sep 2024 - Present",
+  },
 ];
 
 // MARK: EXPERIENCE
