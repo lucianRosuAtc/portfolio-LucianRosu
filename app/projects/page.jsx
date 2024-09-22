@@ -81,7 +81,7 @@ export default function Projects() {
                   </div>
 
                   <h4 className="px-4 py-5">{project.name}</h4>
-                  <CardDescription className="text-muted-foreground text-lg mb-2 font-light line-clamp-2 px-5 pb-16">
+                  <CardDescription className="text-muted-foreground text-sm md:text-base xl:text-lg mb-2 font-light line-clamp-2 px-5 pb-7 md:pb-12">
                     {project.description}
                   </CardDescription>
                 </Card>
