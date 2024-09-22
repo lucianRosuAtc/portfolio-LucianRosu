@@ -104,7 +104,7 @@ export default function WorkCarousel() {
                     </Link>
                   </div>
                   <h4 className="pl-4 py-5">{project.name}</h4>
-                  <CardDescription className="text-muted-foreground md:text-base xl:text-lg mb-2 font-light line-clamp-2 px-5 pb-12">
+                  <CardDescription className="text-muted-foreground text-sm md:text-base xl:text-lg mb-2 font-light line-clamp-2 px-5 pb-12">
                     {project.description}
                   </CardDescription>
                 </Card>
