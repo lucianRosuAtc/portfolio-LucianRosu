@@ -57,14 +57,14 @@ export const projectData = [
     gitHub: "https://github.com/lucianRosuAtc/musicPlayer",
   },
 
-   {
-    img: "/img/work/mediaPlayerWithPlaylist.png",
-    category: "JavaScript",
-    name: "Music Player with Playlist",
-    description: "A music player with playlist build with HTML, CSS and Javascript.",
-    link: "https://music-player-with-playlist.vercel.app/",
-    gitHub: "https://github.com/lucianRosuAtc/Music-Player-With-Playlist",
-  },
+  //  {
+  //   img: "/img/work/mediaPlayerWithPlaylist.png",
+  //   category: "JavaScript",
+  //   name: "Music Player with Playlist",
+  //   description: "A music player with playlist build with HTML, CSS and Javascript.",
+  //   link: "https://music-player-with-playlist.vercel.app/",
+  //   gitHub: "https://github.com/lucianRosuAtc/Music-Player-With-Playlist",
+  // },
 
 ];
 
