@@ -79,7 +79,7 @@ export default function WorkCarousel() {
         <div>
           <div className="absolute top-2/3 transform -translate-y-1/2 flex z-50">
             <Button
-              className="button border dark:border-white border-none"
+              className="button border dark:border-white light:border-none"
               onClick={previous}
             >
               <ChevronLeft className=" " />
@@ -136,7 +136,7 @@ export default function WorkCarousel() {
 
           <div className="absolute top-2/3 right-8 transform -translate-y-1/2  z-50">
             <Button
-              className="button border dark:border-white border-none"
+              className="button border dark:border-white light:border-none"
               onClick={next}
             >
               <ChevronRight className="" />
