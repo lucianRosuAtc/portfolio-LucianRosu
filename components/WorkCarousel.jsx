@@ -26,14 +26,14 @@ export default function WorkCarousel() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 5000,
+    speed: 4000,
     autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
     centerPadding: "0",
-    autoplay: true,
+    // autoplay: true,
     pauseOnHover: true,
     responsive: [
       {
@@ -78,10 +78,7 @@ export default function WorkCarousel() {
 
         <div>
           <div className="absolute top-2/3 transform -translate-y-1/2 flex z-50">
-            <Button
-              className="button border dark:border-white light:border-none"
-              onClick={previous}
-            >
+            <Button onClick={previous}>
               <ChevronLeft className=" " />
             </Button>
           </div>
@@ -135,11 +132,8 @@ export default function WorkCarousel() {
           </Slider>
 
           <div className="absolute top-2/3 right-8 transform -translate-y-1/2  z-50">
-            <Button
-              className="button border dark:border-white light:border-none"
-              onClick={next}
-            >
-              <ChevronRight className="" />
+            <Button onClick={next}>
+              <ChevronRight />
             </Button>
           </div>
         </div>
