@@ -79,7 +79,7 @@ export default function WorkCarousel() {
         <div>
           <div className="absolute top-2/3 transform -translate-y-1/2 flex z-50">
             <Button onClick={previous}>
-              <ChevronLeft className=" " />
+              <ChevronLeft />
             </Button>
           </div>
 
@@ -131,7 +131,7 @@ export default function WorkCarousel() {
             ))}
           </Slider>
 
-          <div className="absolute top-2/3 right-8 transform -translate-y-1/2  z-50">
+          <div className="absolute top-2/3 right-8 transform -translate-y-1/2 z-50">
             <Button onClick={next}>
               <ChevronRight />
             </Button>
