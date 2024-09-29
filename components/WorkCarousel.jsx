@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Card, CardDescription } from "./ui/card";
 import { RiGithubFill } from "react-icons/ri";
-import { Globe } from "lucide-react";
+import { Globe, ChevronLeft, ChevronRight } from "lucide-react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
 import { projectData } from "./components-data/work-data";
@@ -12,10 +12,17 @@ import { projectData } from "./components-data/work-data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-
+import { useRef } from "react";
 
 export default function WorkCarousel() {
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
+
   const settings = {
     dots: false,
     infinite: true,
@@ -70,7 +77,22 @@ export default function WorkCarousel() {
         </div>
 
         <div>
-          <Slider {...settings} className="mx-auto">
+          <div className="absolute top-2/3 transform -translate-y-1/2 flex z-50">
+            <Button
+              className="button border dark:border-white border-none"
+              onClick={previous}
+            >
+              <ChevronLeft className=" " />
+            </Button>
+          </div>
+
+          <Slider
+            ref={(slider) => {
+              sliderRef = slider;
+            }}
+            {...settings}
+            className="mx-auto"
+          >
             {projectData.map((project, index) => (
               <div key={index} className="mx-auto">
                 <Card className="group relative mx-2 md:mx-4 shadow-xl dark:bg-[#0C0A09] dark:shadow-secondary dark:shadow-lg max-w-[400px] mb-12 p-1">
@@ -111,6 +133,15 @@ export default function WorkCarousel() {
               </div>
             ))}
           </Slider>
+
+          <div className="absolute top-2/3 right-8 transform -translate-y-1/2  z-50">
+            <Button
+              className="button border dark:border-white border-none"
+              onClick={next}
+            >
+              <ChevronRight className="" />
+            </Button>
+          </div>
         </div>
       </div>
     </div>
