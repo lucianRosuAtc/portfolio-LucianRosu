@@ -18,8 +18,7 @@ export default function Hero() {
             </div>
             <h1 className="mb-4">Hello, my name is Lucian Rosu</h1>
             <p className="subtitle max-w-md mx-auto xl:mx-0">
-              A concise summary offering insights into myself, my professional
-              journey, and my occupational engagements.
+            As a Web Developer, I have honed my expertise in creating responsive and modern web applications using technologies like Next.js, TailwindCSS, JavaScript, HTML, and CSS. With a focus on delivering visually appealing and functional user experiences, I also leverage design tools like Canva to craft engaging content. My journey reflects a dedication to building efficient and scalable solutions that meet client and industry needs.
             </p>
             <div className="flex flex-col md:flex-row gap-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
