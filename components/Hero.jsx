@@ -9,7 +9,7 @@ import Badge from "./Badge";
 
 export default function Hero() {
   return (
-    <section className="py-12 xl:py-24 xl:h-[84vh] xl:pt-28 bg-orange-100 dark:bg-transparent">
+    <section className="py-12 xl:py-24 xl:h-[84vh] xl:pt-28 bg-orange-100 dark:bg-secondary/40">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex flex-col justify-center xl:mx-0 mx-auto text-center xl:text-left max-w-xl">
@@ -18,7 +18,7 @@ export default function Hero() {
             </div>
             <h1 className="mb-4">Hello, my name is Lucian Rosu</h1>
             <p className="subtitle max-w-md mx-auto xl:mx-0">
-            As a Web Developer, I have honed my expertise in creating responsive and modern web applications using technologies like Next.js, TailwindCSS, JavaScript, HTML, and CSS. With a focus on delivering visually appealing and functional user experiences, I also leverage design tools like Canva to craft engaging content. My journey reflects a dedication to building efficient and scalable solutions that meet client and industry needs.
+            I've developed a strong expertise in building modern, responsive web applications, leveraging the latest technologies to create visually appealing and highly functional user experiences.
             </p>
             <div className="flex flex-col md:flex-row gap-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
